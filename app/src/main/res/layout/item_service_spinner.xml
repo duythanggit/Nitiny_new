@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:paddingStart="@dimen/size_10dp"
+    android:paddingEnd="@dimen/size_10dp"
+    android:paddingTop="@dimen/size_5dp"
+    android:paddingBottom="@dimen/size_5dp">
+    <ImageView
+        android:id="@+id/ivAvatarService"
+        android:layout_width="@dimen/size_25dp"
+        android:layout_height="@dimen/size_25dp"
+        android:src="@drawable/ic_facebook"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:id="@+id/tvServiceName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/ivAvatarService"
+        android:layout_marginStart="@dimen/size_15dp"
+        android:text="dsad asd sdsad sadsadasdsdsad adsad sadnsa nsdnsad nsa dnsa dnsad nsa dsand sa"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:ellipsize="end"/>
+</RelativeLayout>

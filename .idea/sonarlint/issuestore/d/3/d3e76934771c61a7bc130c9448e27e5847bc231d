@@ -1,0 +1,15 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ş•‹ıÿÿÿÿ
+h
+java:S3776`"RRefactor this method to reduce its Cognitive Complexity from 75 to the 15 allowed.(ÔĞ£™
+e
+java:S4201Ô"IRemove this unnecessary null check; "instanceof" returns false for nulls.(‚ùøÿÿÿÿÿ
+W	java:S125à"<This block of commented-out lines of code should be removed.(Ä„¨æøÿÿÿÿ
+?	java:S108ã")Either remove or fill this block of code.(¤­ö
+?	java:S108å")Either remove or fill this block of code.(ßÈ´
+\
+java:S2147å"ECombine this catch with the one at line 227, which has the same body.(ßÈ´
+R	java:S125ø"<This block of commented-out lines of code should be removed.(Î©“¥
+H
+java:S5261À"1Add explicit curly braces to avoid dangling else.(å¥‡
+?	java:S131š""Add a default case to this switch.(—Š½8µİíˆ³.

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/ctlTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bkg_top_shadow"
+        android:paddingStart="@dimen/size_15dp"
+        android:paddingTop="@dimen/size_15dp"
+        android:paddingEnd="@dimen/size_15dp"
+        android:paddingBottom="@dimen/size_15dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/tvTitleQuantity"
+            fontPath="@string/font_HelveticaNeue_Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số lượng hàng"
+            tools:ignore="MissingConstraints,MissingPrefix" />
+
+        <TextView
+            android:id="@+id/tvQuantity"
+            fontPath="@string/font_HelveticaNeue_Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="MissingConstraints,MissingPrefix" />
+
+        <TextView
+            android:id="@+id/tvTitleCost"
+            fontPath="@string/font_HelveticaNeue_Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:text="Thành tiền"
+            app:layout_constraintTop_toBottomOf="@id/tvQuantity"
+            tools:ignore="MissingConstraints,MissingPrefix" />
+
+        <TextView
+            android:id="@+id/tvCost"
+            fontPath="@string/font_HelveticaNeue_Medium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="0đ"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvTitleCost"
+            app:layout_constraintTop_toTopOf="@id/tvTitleCost"
+            tools:ignore="MissingPrefix" />
+
+        <Button
+            android:id="@+id/btnPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_16dp"
+            android:background="@drawable/bg_button_circle_primary"
+            android:text="Tiến hành đặt hàng"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            app:layout_constraintTop_toBottomOf="@id/tvCost" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcCart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/ctlTotal"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

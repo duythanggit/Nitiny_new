@@ -1,0 +1,174 @@
+apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda'
+/*apply plugin: 'io.fabric'*/
+
+Properties props = new Properties()
+def appPropsFile = file('app.properties')
+
+Properties versionProps = new Properties()
+def versionPropsFile = file('version.properties')
+
+try {
+    props.load(appPropsFile.newDataInputStream())
+} catch (Exception ex) {
+    throw new GradleException("Missing su.properties, check the app.properties file.")
+}
+
+try {
+    versionProps.load(versionPropsFile.newDataInputStream())
+} catch (Exception ex) {
+    throw new GradleException("Missing version.properties, check the version.properties file.")
+}
+
+android {
+
+    def defineVersionName = versionProps["VERSION_NAME"]
+    def defineVersionCode = versionProps["VERSION_CODE"].toInteger()
+
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId rootProject.ext.applicationId
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode defineVersionCode
+        versionName defineVersionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        /*vectorDrawables.useSupportLibrary = true*/
+    }
+
+    buildTypes {
+        debug {
+            buildConfigField "String", "ROOT_DOMAIN", "\"${props.getProperty("debugRootDomain")}\""
+            buildConfigField "String", "MAP_API_DOMAIN", "\"${props.getProperty("mapAPIDomain")}\""
+            buildConfigField "String", "PLACE_SEARCH_KEY", "\"${props.getProperty("debugPlaceSearchAPI")}\""
+            buildConfigField "String", "ENCRYPT_KEY", "\"${props.getProperty("encrypKey")}\""
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "ROOT_DOMAIN", "\"${props.getProperty("releaseRootDomain")}\""
+            buildConfigField "String", "MAP_API_DOMAIN", "\"${props.getProperty("mapAPIDomain")}\""
+            buildConfigField "String", "PLACE_SEARCH_KEY", "\"${props.getProperty("releasePlaceSearchAPI")}\""
+            buildConfigField "String", "ENCRYPT_KEY", "\"${props.getProperty("encrypKey")}\""
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+}
+
+def increaseVersion() {
+    Properties versionprops = new Properties()
+    def versionPropsFile = file('version.properties')
+    try {
+        versionprops.load(versionPropsFile.newDataInputStream())
+    } catch (Exception ex) {
+        throw new GradleException("Missing version.properties, check the version.properties file.")
+    }
+    def version = versionprops["VERSION_CODE"].toInteger() + 1
+    versionprops['VERSION_CODE'] = version.toString()
+    versionprops.store(versionPropsFile.newWriter(), null)
+}
+
+task doIncreaseVersion {
+    println "Increase build version..."
+//    increaseVersion()
+}
+
+
+repositories {
+    jcenter()
+    maven { url 'https://maven.fabric.io/public' }
+    maven { url "https://jitpack.io" }
+    maven { url "https://maven.google.com" }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    /*Support Library*/
+    implementation deps.appcompat
+    implementation deps.supportDesign
+    implementation deps.supportCardview
+    implementation deps.constraintLayout
+    implementation deps.supportV4
+    implementation deps.recyclerView
+    /*Library load image*/
+    implementation deps.glide
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:design:28.0.0'
+    annotationProcessor deps.glideCompile
+    /*Library Networking*/
+    implementation deps.retrofit
+    implementation deps.retrofitConvert
+    implementation deps.retrofitAdapter
+    implementation deps.rxjava
+    implementation deps.rxandroid
+    implementation deps.okHttp
+    implementation deps.okHttpLogging
+    /*Customfont*/
+    implementation deps.calligraphy
+    /*Library support inject*/
+    implementation deps.dagger
+    implementation deps.constraintLayout
+    annotationProcessor deps.daggerProcessor
+    compileOnly deps.jsr250
+    implementation deps.javaxInject
+    /*Generator for View*/
+    implementation deps.butterKnife
+    annotationProcessor deps.butterKnifeProcessor
+    /*Timber*/
+    implementation deps.timber
+
+    implementation deps.dexter
+
+    implementation deps.circularImageV
+
+    implementation deps.pinView
+
+    implementation deps.picasso
+    implementation deps.nineold
+    implementation deps.slider
+
+    implementation deps.imagePicker
+    implementation deps.compressor
+
+    implementation deps.googleMap
+    implementation deps.googleFirebaseMess
+    implementation deps.ggAuth
+    implementation deps.ggPlaces
+    implementation deps.location
+    implementation deps.socketIO
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'me.srodrigo:androidhintspinner:1.0.0'
+
+    implementation 'io.github.luizgrp.sectionedrecyclerviewadapter:sectionedrecyclerviewadapter:1.2.0'
+
+    testImplementation deps.junit
+    androidTestImplementation deps.runner
+    androidTestImplementation deps.espresso
+    testAnnotationProcessor deps.daggerCompiler
+    androidTestAnnotationProcessor deps.daggerCompiler
+    compile 'com.github.travijuu:numberpicker:1.0.7'
+
+
+
+}
+
+retrolambda {
+    jvmArgs '-noverify'
+}
+
+configurations.all {
+    resolutionStrategy.force deps.supportAnnotation
+}
+
+apply plugin: 'com.google.gms.google-services'

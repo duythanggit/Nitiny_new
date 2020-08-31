@@ -1,0 +1,15 @@
+
+N
+java:S4973"9Use the "equals" method if value comparison was intended.(ØŒ6
+N
+java:S4973"9Use the "equals" method if value comparison was intended.(ØŒ6
+B
+java:S1602",Remove useless curly braces around statement(÷¼¼Ä
+œ
+java:S1186'"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ù“ Ğÿÿÿÿÿ
+B
+java:S1602.",Remove useless curly braces around statement(÷¼¼Ä
+œ
+java:S1186;"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ù“ Ğÿÿÿÿÿ
+œ
+java:S1186Q"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ù“ Ğÿÿÿÿÿ

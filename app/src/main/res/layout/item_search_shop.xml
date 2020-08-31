@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+tools:ignore="MissingPrefix"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:orientation="horizontal"
+android:weightSum="7"
+    android:layout_marginTop="@dimen/size_8dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_weight="5">
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_80dp"
+        app:cardCornerRadius="@dimen/size_10dp"
+        android:layout_margin="@dimen/size_4dp">
+        <ImageView
+            android:id="@+id/ivAvatarShop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_logo_mini"/>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_weight="2"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/bg_border_bottom"
+    android:paddingBottom="@dimen/size_2dp"
+    android:layout_marginHorizontal="@dimen/size_6dp"
+    android:weightSum="5">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="2"
+        android:layout_marginStart="@dimen/size_10dp"
+        android:layout_marginEnd="@dimen/size_10dp">
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorFF8800"
+            tools:text="Đặt sân bóngdsad asd asdsad adsadsadasdsa"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textSize="@dimen/text_size_14sp"/>
+        <TextView
+            android:id="@+id/tvAddr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color242937"
+            tools:text="Hỗ trợ từ A -> Zas dsa dsadsa dasdsadsadasdsad"
+            android:textSize="@dimen/text_size_14sp"
+            android:drawableLeft="@drawable/ic_location_on"
+            android:layout_marginStart="-4dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:singleLine="true"
+            android:scrollHorizontally="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit ="marquee_forever"/>
+        <TextView
+            android:id="@+id/tvCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color666666"
+            tools:text="Hỗ trợ từ A -> Zas dsa dsadsa dasdsadsadasdsad"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="@dimen/text_size_14sp"
+            android:singleLine="true"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+            <TextView
+                android:id="@+id/tvDistance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color242937"
+                tools:text="km"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size_14sp"
+                android:layout_weight="3"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="2"
+                android:gravity="end">
+                <TextView
+                    android:id="@+id/tvView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/size_5dp"
+                    android:text="Xem"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:layout_marginEnd="@dimen/size_5dp"
+                    android:textColor="@color/colorFF8800"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/color666666"
+                    android:layout_marginVertical="@dimen/size_6dp"/>
+                <TextView
+                    android:id="@+id/tvLink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="Liên kết"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:padding="@dimen/size_5dp"
+                    android:textColor="@color/colorFF8800"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

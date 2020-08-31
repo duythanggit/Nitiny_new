@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/size_8dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txtLabel"
+            fontPath="@string/font_HelveticaNeue_Medium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color242937"
+            app:layout_constraintEnd_toStartOf="@+id/spnService"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Sân bóng Hai Kan" />
+
+        <Spinner
+            android:id="@+id/spnService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/txtLabel"
+            tools:ignore="MissingConstraints" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_7dp"
+        android:elevation="@dimen/size_10dp"
+        app:cardCornerRadius="@dimen/size_6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vpSalon"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_100dp" />
+
+            <ImageView
+                android:id="@+id/imgPre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_chevron_left" />
+
+            <ImageView
+                android:id="@+id/imgNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_chevron_right" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        fontPath="@string/font_HelveticaNeue_Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/title_rating_service"
+        android:textColor="@color/color242937" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/size_20dp"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <RatingBar
+                    android:id="@+id/rBSalon"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:isIndicator="false"
+                    android:numStars="5"
+                    android:stepSize="1"
+                    android:theme="@style/RatingBar" />
+
+                <TextView
+                    fontPath="@string/font_HelveticaNeue_Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/title_shop"
+                    android:textColor="@color/color242937" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <RatingBar
+                    android:id="@+id/rBStaff"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:isIndicator="false"
+                    android:numStars="5"
+                    android:stepSize="1"
+                    android:theme="@style/RatingBar" />
+
+                <TextView
+                    fontPath="@string/font_HelveticaNeue_Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/title_staff"
+                    android:textColor="@color/color242937" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <EditText
+            style="@style/StyleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:layout_marginEnd="@dimen/size_10dp"
+            android:background="@drawable/bg_form_order_note"
+            android:gravity="top"
+            android:hint="@string/title_other_rate"
+            android:lines="5"
+            android:maxLines="5"
+            android:padding="@dimen/size_10dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSendRating"
+        style="@style/ConstraintCenterHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/size_8dp"
+        android:background="@drawable/bg_button_circle_primary"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:paddingStart="@dimen/size_32dp"
+        android:paddingTop="@dimen/size_8dp"
+        android:paddingEnd="@dimen/size_32dp"
+        android:paddingBottom="@dimen/size_8dp"
+        android:text="@string/title_send"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_16sp"
+        app:layout_constraintTop_toBottomOf="@id/tvDesc" />
+</LinearLayout>

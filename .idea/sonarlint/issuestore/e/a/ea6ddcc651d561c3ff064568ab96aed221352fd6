@@ -1,0 +1,66 @@
+
+U
+java:S1117­">Rename "productId" which hides the field declared at line 106.(ÑÀÔò
+Z
+java:S1155Ô">Use isEmpty() to check whether the collection is empty or not.(Š±í•úÿÿÿÿ
+n
+java:S1450j"XRemove the "productId" field and declare it as a local variable in the relevant methods.(şáÀã
+e
+java:S4201¿"IRemove this unnecessary null check; "instanceof" returns false for nulls.(‚ùøÿÿÿÿÿ
+D	java:S108ö")Either remove or fill this block of code.(é–³öûÿÿÿÿ
+e
+java:S4201Ÿ"IRemove this unnecessary null check; "instanceof" returns false for nulls.(‚ùøÿÿÿÿÿ
+D	java:S108ê")Either remove or fill this block of code.(±Ÿ—±ÿÿÿÿÿ
+R	java:S125“"<This block of commented-out lines of code should be removed.(¢à‹õ
+K
+java:S1066¯"/Merge this if statement with the enclosing one.(úË•§şÿÿÿÿ
+a
+java:S2147¹"ECombine this catch with the one at line 439, which has the same body.(‰•’şÿÿÿÿ
+F
+java:S1066 "/Merge this if statement with the enclosing one.(‰¿¸Ù
+W	java:S125Ã"<This block of commented-out lines of code should be removed.(—ƒÑ¢üÿÿÿÿ
+W	java:S125³"<This block of commented-out lines of code should be removed.(çùÏùÿÿÿÿ
+W	java:S125Ğ"<This block of commented-out lines of code should be removed.(¶íù»ıÿÿÿÿ
+W	java:S125Ö"<This block of commented-out lines of code should be removed.(šÔÇƒşÿÿÿÿ
+D
+java:S1604¥"(Make this anonymous inner class a lambda(ÃÂ•ışÿÿÿÿ
+p
+java:S2293Î"YReplace the type specification in this constructor call with the diamond operator ("<>").(» ÷‚
+F
+java:S1066´"/Merge this if statement with the enclosing one.(·ı¥
+D	java:S108ø")Either remove or fill this block of code.(‰•’şÿÿÿÿ
+8	java:S131Á""Add a default case to this switch.(—Š½
+a
+java:S2147ø"ECombine this catch with the one at line 246, which has the same body.(‰•’şÿÿÿÿ
+D	java:S108·")Either remove or fill this block of code.(é–³öûÿÿÿÿ
+R	java:S125ò"<This block of commented-out lines of code should be removed.(¢à‹õ
+D	java:S108—")Either remove or fill this block of code.(é–³öûÿÿÿÿ
+r
+java:S1450q"WRemove the "products" field and declare it as a local variable in the relevant methods.(”¢ÏÒùÿÿÿÿ
+Z
+java:S1155ü">Use isEmpty() to check whether the collection is empty or not.(›»‹ìøÿÿÿÿ
+8	java:S131®""Add a default case to this switch.(—Š½
+R	java:S125Å"<This block of commented-out lines of code should be removed.(Î©“¥
+u
+java:S2293Ï"YReplace the type specification in this constructor call with the diamond operator ("<>").(¬º¥÷ıÿÿÿÿ
+a
+java:S2147™"ECombine this catch with the one at line 407, which has the same body.(‰•’şÿÿÿÿ
+F
+java:S1066¹"/Merge this if statement with the enclosing one.(â“ˆŞ
+D	java:S108¹")Either remove or fill this block of code.(‰•’şÿÿÿÿ
+W	java:S125ù"<This block of commented-out lines of code should be removed.(¶íù»ıÿÿÿÿ
+U
+java:S1155­">Use isEmpty() to check whether the collection is empty or not.(çœîç
+o
+java:S2293ì"YReplace the type specification in this constructor call with the diamond operator ("<>").(Šœ
+W	java:S125ê"<This block of commented-out lines of code should be removed.(¶íù»ıÿÿÿÿ
+D	java:S108™")Either remove or fill this block of code.(‰•’şÿÿÿÿ
+|
+java:S1450s"aRemove the "listProductSpinner" field and declare it as a local variable in the relevant methods.(‘£ıŞüÿÿÿÿ
+e
+java:S4201¥"IRemove this unnecessary null check; "instanceof" returns false for nulls.(‚ùøÿÿÿÿÿ
+F
+java:S1066î"/Merge this if statement with the enclosing one.(ù¾È³
+D	java:S108â")Either remove or fill this block of code.(±Ÿ—±ÿÿÿÿÿ
+i
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 53 to the 15 allowed.(ÔĞ£™

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingPrefix"
+    app:cardCornerRadius="@dimen/size_6dp"
+    android:layout_marginBottom="@dimen/size_6dp"
+    android:layout_marginTop="@dimen/size_6dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/size_8dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cartShopAvatar"
+            android:layout_width="@dimen/size_65dp"
+            android:layout_height="@dimen/size_65dp"
+            app:cardCornerRadius="@dimen/size_30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imgAvatar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@null"
+                android:src="@drawable/avb_logo" />
+        </android.support.v7.widget.CardView>
+
+        <ImageView
+            android:id="@+id/ivDiamond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/size_2dp"
+            android:layout_marginBottom="@dimen/size_10dp"
+            android:src="@drawable/ic_diamond_large"
+            app:layout_constraintBottom_toBottomOf="@id/cartShopAvatar"
+            app:layout_constraintEnd_toEndOf="@id/cartShopAvatar" />
+
+        <View
+            android:id="@+id/vLine"
+            android:layout_width="1px"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/size_13dp"
+            android:background="@color/colorE6E6E6"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/cartShopAvatar"
+            app:layout_constraintStart_toEndOf="@id/ivDiamond"
+            app:layout_constraintTop_toTopOf="@id/cartShopAvatar" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideLineEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="130dp" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_8dp"
+            android:drawablePadding="@dimen/size_5dp"
+            android:gravity="end"
+            android:maxLines="1"
+            android:textSize="@dimen/text_size_12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/guideLineEnd"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="10.09.2019" />
+
+        <TextView
+            android:id="@+id/txtViewDetail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_8dp"
+            android:drawablePadding="@dimen/size_5dp"
+            android:text="Xem chi tiết"
+            android:textSize="@dimen/text_size_14sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/guideLineEnd" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="@dimen/text_size_14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/guideLineEnd"
+            app:layout_constraintStart_toEndOf="@id/vLine"
+            tools:ignore="MissingConstraints"
+            tools:text="Mã Hàng" />
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="@dimen/size_150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/color808080"
+            android:textSize="@dimen/text_size_14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/vLine"
+            app:layout_constraintTop_toBottomOf="@id/tvName"
+            tools:text="Số lượng: " />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            fontPath="@string/font_HelveticaNeue_Medium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:layout_marginTop="@dimen/size_3dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/guideLineEnd"
+            app:layout_constraintStart_toEndOf="@id/vLine"
+            app:layout_constraintTop_toBottomOf="@id/tvAddress"
+            tools:text="Đã hủy" />
+
+        <LinearLayout
+            android:id="@+id/lnFunction"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:layout_marginTop="@dimen/size_6dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/guideLineEnd"
+            app:layout_constraintStart_toEndOf="@id/vLine"
+            app:layout_constraintTop_toBottomOf="@id/tvTime">
+
+            <ImageView
+                android:id="@+id/imgCall"
+                android:layout_width="@dimen/size_20dp"
+                android:layout_height="@dimen/size_20dp"
+                android:src="@drawable/ic_call" />
+
+            <ImageView
+                android:id="@+id/imgChat"
+                android:layout_width="@dimen/size_20dp"
+                android:layout_height="@dimen/size_20dp"
+                android:layout_marginLeft="@dimen/size_16dp"
+                android:src="@drawable/ic_fav_dashboard"
+                android:tint="@color/colorPrimary" />
+
+            <ImageView
+                android:id="@+id/imgLocation"
+                android:layout_width="@dimen/size_20dp"
+                android:layout_height="@dimen/size_20dp"
+                android:layout_marginLeft="@dimen/size_16dp"
+                android:src="@drawable/ic_address"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/tvStatus"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.74"
+            app:layout_constraintStart_toEndOf="@+id/tvAddress"
+            app:layout_constraintTop_toBottomOf="@+id/tvName">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tổng tiền: "
+                app:layout_constraintBottom_toBottomOf="@+id/txtViewDetail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.372"
+                app:layout_constraintStart_toEndOf="@+id/tvAddress"
+                app:layout_constraintTop_toTopOf="@+id/tvTime"
+                app:layout_constraintVertical_bias="0.543" />
+
+            <TextView
+                android:id="@+id/tvTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10000đ"
+                android:textColor="@color/colorPrimary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.111"
+                app:layout_constraintStart_toEndOf="@+id/textView3"
+                app:layout_constraintTop_toBottomOf="@+id/tvTime"
+                app:layout_constraintVertical_bias="0.282" />
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

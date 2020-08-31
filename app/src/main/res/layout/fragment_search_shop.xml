@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="@dimen/size_10dp">
+    <LinearLayout
+        android:id="@+id/lnHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/size_16dp"
+        android:layout_marginEnd="@dimen/size_16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:weightSum="6">
+        <RelativeLayout
+            android:id="@+id/rlSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_4dp"
+            android:background="@drawable/bkg_border_choose_category"
+            android:orientation="horizontal"
+            android:layout_weight="2">
+
+            <Spinner
+                android:id="@+id/spinnerService"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:gravity="center"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_category_left"
+                android:rotation="270"/>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/lnBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="4"
+            android:layout_gravity="center_vertical">
+            <TextView
+                android:id="@+id/tvCloseSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bỏ lọc"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:background="@drawable/bg_button_primary"
+                android:paddingTop="@dimen/size_4dp"
+                android:paddingBottom="@dimen/size_6dp"
+                android:paddingHorizontal="@dimen/size_10dp"
+                android:layout_marginStart="@dimen/size_10dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tvSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tìm kiếm"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:background="@drawable/bg_button_primary"
+                android:paddingTop="@dimen/size_4dp"
+                android:paddingBottom="@dimen/size_6dp"
+                android:paddingHorizontal="@dimen/size_10dp"
+                android:layout_marginStart="@dimen/size_10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <android.support.constraint.Guideline
+        android:id="@+id/guideCenterVertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"/>
+
+    <vn.chapp.vn24h.base.BaseRecyclerView
+        android:id="@+id/rcShop"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/lnHeader"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="@dimen/size_8dp"
+        android:paddingHorizontal="@dimen/size_4dp"/>
+</android.support.constraint.ConstraintLayout>

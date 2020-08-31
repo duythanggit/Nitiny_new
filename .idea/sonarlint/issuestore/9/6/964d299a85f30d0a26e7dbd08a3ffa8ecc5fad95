@@ -1,0 +1,15 @@
+
+M
+java:S1144®"6Remove this unused private "doRegisterRefCode" method.(î¡¬ó
+˜
+java:S1186ª"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(½ë¿í
+Q
+java:S1854J";Remove this useless assignment to local variable "account".(‰¢Ûï
+a
+java:S1858}"?"getId" returns a string, there's no need to call "toString()".(«ô•üÿÿÿÿ8üÄê«.
+W	java:S125¢"<This block of commented-out lines of code should be removed.(Ëâ§ùÿÿÿÿ
+Q	java:S125K"<This block of commented-out lines of code should be removed.(È·Äô
+B
+java:S1481J",Remove this unused "account" local variable.(‰¢Ûï
+v
+java:S1488;"`Immediately return this expression instead of assigning it to the temporary variable "fragment".(¢Î¤ñ

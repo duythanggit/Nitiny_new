@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/size_150dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginStart="@dimen/size_7dp"
+    android:layout_marginEnd="@dimen/size_5dp"
+    tools:ignore="MissingPrefix">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardDetail"
+        android:layout_width="@dimen/size_150dp"
+        android:layout_height="@dimen/size_100dp"
+        app:cardCornerRadius="@dimen/size_10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/ivProduct"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_pitch" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color80FFFFFF"
+        android:orientation="vertical"
+        android:padding="@dimen/size_5dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Giầy thể thao" />
+
+        <TextView
+            android:id="@+id/tvPriceReal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="350.000đ"
+            android:textSize="@dimen/text_size_10sp"
+            app:layout_constraintBottom_toBottomOf="@id/tvPriceSale"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tvPriceSale" />
+
+        <TextView
+            android:id="@+id/tvPriceSale"
+            fontPath="@string/font_HelveticaNeue_Bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTitle"
+            android:text="300.000đ"
+            android:textColor="@color/colorFF8800"
+            app:layout_constraintEnd_toStartOf="@id/tvPriceReal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:background="@color/color242937"
+            app:layout_constraintBottom_toBottomOf="@id/tvPriceReal"
+            app:layout_constraintEnd_toEndOf="@id/tvPriceReal"
+            app:layout_constraintStart_toStartOf="@id/tvPriceReal"
+            app:layout_constraintTop_toTopOf="@id/tvPriceReal" />
+    </android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/txtScheduled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_schedule"
+        android:textColor="@color/colorFF8800"
+        android:padding="@dimen/size_5dp"
+        android:elevation="@dimen/size_2dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/size_5dp"
+        android:background="@drawable/bg_progress"
+        android:drawableLeft="@drawable/ic_assignment"
+        android:drawablePadding="@dimen/size_8dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_5dp"/>
+</LinearLayout>

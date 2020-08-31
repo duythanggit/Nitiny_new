@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/size_8dp"
+    android:elevation="@dimen/size_10dp"
+    app:cardCornerRadius="@dimen/size_8dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/size_10dp"
+        android:paddingLeft="@dimen/size_4dp">
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/imgAvatar"
+            android:layout_width="@dimen/size_65dp"
+            android:layout_height="@dimen/size_65dp"
+            android:src="@drawable/ic_vietnamese"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+        <View
+            android:id="@+id/viewLine"
+            android:layout_width="1dp"
+            android:layout_height="@dimen/size_100dp"
+            android:background="@color/colorF5F5F5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgAvatar"
+            app:layout_constraintEnd_toStartOf="@+id/lnInfor"
+            android:layout_marginStart="@dimen/size_8dp"
+            android:layout_marginEnd="@dimen/size_8dp"/>
+        <LinearLayout
+            android:id="@+id/lnInfor"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/size_100dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/viewLine"
+            app:layout_constraintEnd_toStartOf="@+id/lnFunction"
+            android:orientation="vertical"
+            android:layout_marginRight="@dimen/size_4dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hai Kan"
+                android:textSize="@dimen/text_size_14sp"
+                android:textColor="@color/color242937"
+                fontPath="@string/font_HelveticaNeue_Medium" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mỹ Đình, HN"
+                android:textSize="@dimen/text_size_14sp"
+                android:textColor="@color/colorFF8800"
+                fontPath="@string/font_HelveticaNeue_Medium" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10h, 10.09.2019"
+                android:textSize="@dimen/text_size_12sp"
+                android:textColor="@color/color717171"
+                fontPath="@string/font_HelveticaNeue_Medium" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="098.783.5699"
+                android:textSize="@dimen/text_size_12sp"
+                fontPath="@string/font_HelveticaNeue_Medium"
+                android:drawableLeft="@drawable/ic_call"
+                android:textColor="@color/color242937"
+                android:drawablePadding="@dimen/size_8dp"
+                android:layout_marginTop="@dimen/size_8dp" />
+        </LinearLayout>
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/lnFunction"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_100dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/lnInfor">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="@string/title_view_detail"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/text_size_14sp"
+                android:textColor="@color/color242937"
+                fontPath="@string/font_HelveticaNeue_Medium"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/lnWrapButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/lnWrapButton"
+                android:gravity="center" />
+            <LinearLayout
+                android:id="@+id/lnWrapButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="@dimen/size_50dp"
+                    android:layout_height="@dimen/size_30dp"
+                    android:text="Xác nhận"
+                    android:textSize="@dimen/text_size_10sp"
+                    android:textColor="@color/color0ABB0A"
+                    fontPath="@string/font_HelveticaNeue_Medium"
+                    android:background="@drawable/bg_button_confirm"
+                    android:paddingTop="@dimen/size_8dp"
+                    android:paddingBottom="@dimen/size_8dp"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/size_3dp"
+                    android:paddingRight="@dimen/size_3dp"/>
+                <TextView
+                    android:layout_width="@dimen/size_50dp"
+                    android:layout_height="@dimen/size_30dp"
+                    android:text="@string/title_cancel"
+                    android:textSize="@dimen/text_size_10sp"
+                    android:textColor="@color/colorFF8800"
+                    fontPath="@string/font_HelveticaNeue_Medium"
+                    android:background="@drawable/bg_button_cancel"
+                    android:paddingTop="@dimen/size_8dp"
+                    android:paddingBottom="@dimen/size_8dp"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/size_3dp"
+                    android:paddingRight="@dimen/size_3dp"/>
+            </LinearLayout>
+        </android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

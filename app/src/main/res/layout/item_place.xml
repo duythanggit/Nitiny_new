@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/size_16dp"
+    tools:ignore="MissingPrefix"
+    android:background="@drawable/bkg_bottom_line">
+    <ImageView
+        android:id="@+id/imgPin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_location_on"
+        style="@style/ConstraintCenterVertical"/>
+    <TextView
+        android:id="@+id/tvPlaceTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Phòng Trồng răng Ngụy Phát"
+        app:layout_constraintStart_toEndOf="@id/imgPin"
+        android:layout_marginLeft="@dimen/size_10dp"
+        fontPath="@string/font_HelveticaNeue_Bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/ConstraintCenterVertical"
+        android:textColor="@color/color33242937" />
+</android.support.constraint.ConstraintLayout>

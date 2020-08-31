@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/size_10dp"
+    android:paddingBottom="@dimen/size_10dp"
+    android:paddingStart="@dimen/size_15dp"
+    android:paddingEnd="@dimen/size_15dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="T2, 12.09.19"
+        android:textSize="@dimen/text_size_16sp"
+        android:visibility="invisible"
+        android:drawableEnd="@drawable/ic_calendar"
+        android:drawablePadding="@dimen/size_10dp"
+        android:layout_alignParentEnd="true"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lịch sử đặt"
+        android:textSize="@dimen/text_size_18sp"
+        android:layout_centerVertical="true"
+        fontPath="@string/font_HelveticaNeue_Medium"
+        tools:ignore="MissingPrefix" />
+</RelativeLayout>

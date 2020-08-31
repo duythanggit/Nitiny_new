@@ -1,0 +1,459 @@
+{
+  "project_info": {
+    "project_number": "471262517032",
+    "firebase_url": "https://shopcare.firebaseio.com",
+    "project_id": "shopcare",
+    "storage_bucket": "shopcare.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471262517032:android:87bc1b56a83950559ca21d",
+        "android_client_info": {
+          "package_name": "vn.chapp.anvietbep"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "471262517032-uo99p6d94tftamk59osgv6gcg0en1cu9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD25COwFQAW-sr87bDoKkgk6u6OpGJPSnM"
+        },
+        {
+          "current_key": "AIzaSyCkWiNIXjc4G_A3CrD9Zo0ACDmsPjeWvag"
+        },
+        {
+          "current_key": "AIzaSyDF80U3wDYkCQeNgeji-kIUqNFUBEWbwig"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "471262517032-uo99p6d94tftamk59osgv6gcg0en1cu9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "471262517032-1v78lsp5s98ri4fhsi0vuom9fh05a5eq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.chapp.CShopMerchant",
+                "app_store_id": "1485884944"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471262517032:android:f5fd1bcbdc4684009ca21d",
+        "android_client_info": {
+          "package_name": "vn.chapp.giatien"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "471262517032-52hnqntue8bh89felcvgbtee487vuoe5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.chapp.giatien",
+            "certificate_hash": "1edeb87605573d6222ece8aee04245f443dc9cb2"
+          }
+        },
+        {
+          "client_id": "471262517032-uo99p6d94tftamk59osgv6gcg0en1cu9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD25COwFQAW-sr87bDoKkgk6u6OpGJPSnM"
+        },
+        {
+          "current_key": "AIzaSyCkWiNIXjc4G_A3CrD9Zo0ACDmsPjeWvag"
+        },
+        {
+          "current_key": "AIzaSyDF80U3wDYkCQeNgeji-kIUqNFUBEWbwig"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "471262517032-uo99p6d94tftamk59osgv6gcg0en1cu9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "471262517032-1v78lsp5s98ri4fhsi0vuom9fh05a5eq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.chapp.CShopMerchant",
+                "app_store_id": "1485884944"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471262517032:android:e97363a6aab370529ca21d",
+        "android_client_info": {
+          "package_name": "vn.chapp.homemarket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "471262517032-gip6isq19tm1fk7kk945mbbkc3alem7g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.chapp.homemarket",
+            "certificate_hash": "1edeb87605573d6222ece8aee04245f443dc9cb2"
+          }
+        },
+        {
+          "client_id": "471262517032-uo99p6d94tftamk59osgv6gcg0en1cu9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD25COwFQAW-sr87bDoKkgk6u6OpGJPSnM"
+        },
+        {
+          "current_key": "AIzaSyCkWiNIXjc4G_A3CrD9Zo0ACDmsPjeWvag"
+        },
+        {
+          "current_key": "AIzaSyDF80U3wDYkCQeNgeji-kIUqNFUBEWbwig"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "471262517032-uo99p6d94tftamk59osgv6gcg0en1cu9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "471262517032-1v78lsp5s98ri4fhsi0vuom9fh05a5eq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.chapp.CShopMerchant",
+                "app_store_id": "1485884944"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471262517032:android:49cbf6e9517dcf229ca21d",
+        "android_client_info": {
+          "package_name": "vn.chapp.mart24"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "471262517032-orrgmgrh4e9gujji1u8desh1sjjucvsc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.chapp.mart24",
+            "certificate_hash": "fcaa4f806ed6429b9783fafa1ec820ee7c0b1ab4"
+          }
+        },
+        {
+          "client_id": "471262517032-2q1d95clhnq8jkl8d3u8vvipbohfglq3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.chapp.mart24",
+            "certificate_hash": "12320c733f513f11455d6753bbe4ebfa506d101b"
+          }
+        },
+        {
+          "client_id": "471262517032-q1cqqf1jg13uh5bb8fnikiuegmpccjts.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.chapp.mart24",
+            "certificate_hash": "1edeb87605573d6222ece8aee04245f443dc9cb2"
+          }
+        },
+        {
+          "client_id": "471262517032-uo99p6d94tftamk59osgv6gcg0en1cu9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD25COwFQAW-sr87bDoKkgk6u6OpGJPSnM"
+        },
+        {
+          "current_key": "AIzaSyCkWiNIXjc4G_A3CrD9Zo0ACDmsPjeWvag"
+        },
+        {
+          "current_key": "AIzaSyDF80U3wDYkCQeNgeji-kIUqNFUBEWbwig"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "471262517032-uo99p6d94tftamk59osgv6gcg0en1cu9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "471262517032-1v78lsp5s98ri4fhsi0vuom9fh05a5eq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.chapp.CShopMerchant",
+                "app_store_id": "1485884944"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471262517032:android:c71fa08db2c086e99ca21d",
+        "android_client_info": {
+          "package_name": "vn.chapp.vietmarket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "471262517032-tdc2bp2jka6mvevolbua5vd9hdslqsc6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.chapp.vietmarket",
+            "certificate_hash": "1313a3ab699950f1f29dc9d28357beedb6514a24"
+          }
+        },
+        {
+          "client_id": "471262517032-sop03ipicvmcdke7u754iuala07v6ra1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.chapp.vietmarket",
+            "certificate_hash": "1f60ee463da7ecb97f011574ed6a0d6601bbe8fd"
+          }
+        },
+        {
+          "client_id": "471262517032-kc9ghes1laj9kd5rjs2rn8s6h6rnoqrq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.chapp.vietmarket",
+            "certificate_hash": "1edeb87605573d6222ece8aee04245f443dc9cb2"
+          }
+        },
+        {
+          "client_id": "471262517032-uo99p6d94tftamk59osgv6gcg0en1cu9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD25COwFQAW-sr87bDoKkgk6u6OpGJPSnM"
+        },
+        {
+          "current_key": "AIzaSyCkWiNIXjc4G_A3CrD9Zo0ACDmsPjeWvag"
+        },
+        {
+          "current_key": "AIzaSyDF80U3wDYkCQeNgeji-kIUqNFUBEWbwig"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "471262517032-uo99p6d94tftamk59osgv6gcg0en1cu9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "471262517032-1v78lsp5s98ri4fhsi0vuom9fh05a5eq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.chapp.CShopMerchant",
+                "app_store_id": "1485884944"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471262517032:android:e0b87f31c2ef15749ca21d",
+        "android_client_info": {
+          "package_name": "vn.chapp.vn24h"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "471262517032-djh8n9j4g4knb423es6nirhrd71g2s4v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.chapp.vn24h",
+            "certificate_hash": "c54783d259b1c631917c05df47db882159295ed1"
+          }
+        },
+        {
+          "client_id": "471262517032-9dmmm1m27u8l31cbcs8lj5p9a1nhr1ji.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.chapp.vn24h",
+            "certificate_hash": "1c0205845f6d0417e6ac4835fb80c823f7b8b267"
+          }
+        },
+        {
+          "client_id": "471262517032-i78pk44ai1b7djikod9bibq2ima5f9pg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.chapp.vn24h",
+            "certificate_hash": "1edeb87605573d6222ece8aee04245f443dc9cb2"
+          }
+        },
+        {
+          "client_id": "471262517032-uo99p6d94tftamk59osgv6gcg0en1cu9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD25COwFQAW-sr87bDoKkgk6u6OpGJPSnM"
+        },
+        {
+          "current_key": "AIzaSyCkWiNIXjc4G_A3CrD9Zo0ACDmsPjeWvag"
+        },
+        {
+          "current_key": "AIzaSyDF80U3wDYkCQeNgeji-kIUqNFUBEWbwig"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "471262517032-uo99p6d94tftamk59osgv6gcg0en1cu9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "471262517032-1v78lsp5s98ri4fhsi0vuom9fh05a5eq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.chapp.CShopMerchant",
+                "app_store_id": "1485884944"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471262517032:android:4ec8d0e0b6c7f7639ca21d",
+        "android_client_info": {
+          "package_name": "vn.cshop.customer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "471262517032-jub588i1sdeur9rt6ptej7jh9sol4l9g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.cshop.customer",
+            "certificate_hash": "1edeb87605573d6222ece8aee04245f443dc9cb2"
+          }
+        },
+        {
+          "client_id": "471262517032-uo99p6d94tftamk59osgv6gcg0en1cu9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD25COwFQAW-sr87bDoKkgk6u6OpGJPSnM"
+        },
+        {
+          "current_key": "AIzaSyCkWiNIXjc4G_A3CrD9Zo0ACDmsPjeWvag"
+        },
+        {
+          "current_key": "AIzaSyDF80U3wDYkCQeNgeji-kIUqNFUBEWbwig"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "471262517032-uo99p6d94tftamk59osgv6gcg0en1cu9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "471262517032-1v78lsp5s98ri4fhsi0vuom9fh05a5eq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.chapp.CShopMerchant",
+                "app_store_id": "1485884944"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471262517032:android:3289085324b5da439ca21d",
+        "android_client_info": {
+          "package_name": "vn.cshop.manager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "471262517032-lkibn6met9194opqen91efhrlfonpt7b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.cshop.manager",
+            "certificate_hash": "1edeb87605573d6222ece8aee04245f443dc9cb2"
+          }
+        },
+        {
+          "client_id": "471262517032-uo99p6d94tftamk59osgv6gcg0en1cu9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD25COwFQAW-sr87bDoKkgk6u6OpGJPSnM"
+        },
+        {
+          "current_key": "AIzaSyCkWiNIXjc4G_A3CrD9Zo0ACDmsPjeWvag"
+        },
+        {
+          "current_key": "AIzaSyDF80U3wDYkCQeNgeji-kIUqNFUBEWbwig"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "471262517032-uo99p6d94tftamk59osgv6gcg0en1cu9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "471262517032-1v78lsp5s98ri4fhsi0vuom9fh05a5eq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.chapp.CShopMerchant",
+                "app_store_id": "1485884944"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

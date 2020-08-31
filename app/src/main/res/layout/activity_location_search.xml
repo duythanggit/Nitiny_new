@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ctlLocation"
+    android:focusableInTouchMode="true"
+    android:focusable="true">
+
+    <vn.chapp.vn24h.ui.widget.UiToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tsTitle="Chọn địa điểm"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_10dp"
+        android:id="@+id/cvSearch"
+        android:layout_marginTop="@dimen/size_10dp"
+        android:layout_marginRight="@dimen/size_10dp"
+        app:cardCornerRadius="@dimen/size_6dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_13dp">
+
+            <EditText
+                android:id="@+id/txtAddr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:hint="Nhập địa chỉ tìm kiếm"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+
+                android:singleLine="true" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvSearch"
+        android:layout_marginTop="@dimen/size_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chọn vị trí trên bản đồ "
+        android:drawableEnd="@drawable/ic_pin"
+        android:textColor="@color/colorFF8800"
+        android:layout_marginStart="@dimen/size_10dp"
+        android:layout_marginEnd="@dimen/size_10dp"
+        app:layout_constraintTop_toBottomOf="@id/cvSearch"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcPlace"
+        app:layout_constraintTop_toBottomOf="@id/tvSearch"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="@dimen/size_10dp"
+        android:layout_marginBottom="@dimen/size_20dp"
+        android:overScrollMode="never" />
+
+</android.support.constraint.ConstraintLayout>

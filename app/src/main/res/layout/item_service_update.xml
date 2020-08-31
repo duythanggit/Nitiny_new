@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="7"
+    tools:ignore="MissingPrefix">
+
+    <ImageView
+        android:id="@+id/ivProduct"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_80dp"
+        android:layout_weight="5"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="@dimen/size_5dp"
+        android:layout_weight="2"
+        android:background="@drawable/bkg_bottom_line"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/size_10dp"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:layout_marginEnd="@dimen/size_10dp"
+            android:layout_weight="1.5"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                fontPath="@string/font_HelveticaNeue_Bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/color333333"
+                android:textSize="@dimen/text_size_14sp"
+                android:textStyle="bold"
+                tools:text="Đặt sân bóngdsad asd asdsad adsadsadasdsa" />
+
+            <TextView
+                android:id="@+id/tvDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_5dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="50000 điểm"
+                android:singleLine="true"
+                android:textColor="@color/color000000"
+                android:textSize="@dimen/text_size_14sp"
+                 />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvPriceSale"
+                    fontPath="@string/font_HelveticaNeue_Bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/color000000"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textStyle="bold"
+                    tools:text="7.0% đã đổi" />
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:progress="50"
+                    android:indeterminate="false"
+                    android:indeterminateTintMode="src_atop"
+                    android:indeterminateTint="@color/colorAccent"/>
+                
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3.5"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtScheduled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/size_2dp"
+                android:background="@drawable/bg_buttom_highlight"
+                android:gravity="center"
+                android:padding="@dimen/size_5dp"
+                android:text="@string/title_schedule"
+                android:textColor="@color/colorFFFFFF"
+                android:textSize="@dimen/text_size_12sp" />
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvPriceReal"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/size_20dp"-->
+<!--                android:ellipsize="end"-->
+<!--                android:gravity="end"-->
+<!--                android:maxLines="1"-->
+<!--                android:singleLine="true"-->
+<!--                android:textSize="@dimen/text_size_9sp"-->
+<!--                tools:text="350.000đ" />-->
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

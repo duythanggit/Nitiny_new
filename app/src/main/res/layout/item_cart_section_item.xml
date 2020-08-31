@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/size_10dp"
+    android:paddingTop="@dimen/size_16dp"
+    android:paddingEnd="@dimen/size_10dp"
+    android:paddingBottom="@dimen/size_12dp"
+    tools:ignore="MissingPrefix">
+
+    <CheckBox
+        android:id="@+id/cbCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/ivPhoto"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/ivPhoto"
+        app:layout_constraintTop_toTopOf="@+id/ivPhoto" />
+
+    <ImageView
+        android:id="@+id/ivPhoto"
+        android:layout_width="@dimen/size_84dp"
+        android:layout_height="@dimen/size_65dp"
+        app:layout_constraintLeft_toRightOf="@+id/cbCheck"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:padding="@dimen/size_8dp"
+        android:id="@+id/ivDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_delete"
+        app:layout_constraintBottom_toBottomOf="@id/ivPhoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ivPhoto"
+        tools:ignore="MissingConstraints" />
+
+    <RelativeLayout
+        android:id="@+id/rlTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_10dp"
+        android:layout_marginEnd="@dimen/size_16dp"
+        app:layout_constraintEnd_toStartOf="@id/ivDelete"
+        app:layout_constraintStart_toEndOf="@id/ivPhoto"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/tvProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="aa" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvPriceDiscount"
+        fontPath="@string/font_HelveticaNeue_Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_2dp"
+        android:text="0đ"
+        android:textColor="@color/colorF92323"
+        app:layout_constraintBottom_toBottomOf="@id/ivPhoto"
+        app:layout_constraintStart_toStartOf="@id/rlTitle"
+        app:layout_constraintTop_toTopOf="@id/ivPhoto" />
+
+    <TextView
+        android:id="@+id/tvPrice"
+        fontPath="@string/font_HelveticaNeue_Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_10dp"
+        android:text="0đ"
+        android:textSize="@dimen/text_size_10sp"
+        app:layout_constraintBottom_toBottomOf="@id/tvPriceDiscount"
+        app:layout_constraintStart_toEndOf="@id/tvPriceDiscount"
+        app:layout_constraintTop_toTopOf="@id/tvPriceDiscount" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#707070"
+        app:layout_constraintBottom_toBottomOf="@id/tvPrice"
+        app:layout_constraintEnd_toEndOf="@id/tvPrice"
+        app:layout_constraintStart_toStartOf="@id/tvPrice"
+        app:layout_constraintTop_toTopOf="@id/tvPrice" />
+
+    <TextView
+        android:id="@+id/tvMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_5dp"
+        android:background="@drawable/bkg_stoke_line"
+        android:paddingStart="17dp"
+        android:paddingEnd="17dp"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="@+id/ivPhoto"
+        app:layout_constraintStart_toStartOf="@id/rlTitle" />
+
+    <EditText
+        android:id="@+id/edtCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bkg_stoke_line"
+        android:paddingStart="17dp"
+        android:paddingEnd="17dp"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="@id/tvMinus"
+        app:layout_constraintStart_toEndOf="@id/tvMinus"
+        app:layout_constraintTop_toTopOf="@id/tvMinus" />
+
+    <TextView
+        android:id="@+id/tvPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bkg_stoke_line"
+        android:paddingStart="17dp"
+        android:paddingEnd="17dp"
+        android:text="+"
+        app:layout_constraintBottom_toBottomOf="@id/edtCount"
+        app:layout_constraintStart_toEndOf="@id/edtCount"
+        app:layout_constraintTop_toTopOf="@id/edtCount" />
+
+</android.support.constraint.ConstraintLayout>

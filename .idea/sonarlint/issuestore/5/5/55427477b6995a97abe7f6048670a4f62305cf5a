@@ -1,0 +1,13 @@
+
+`
+java:S1155e">Use isEmpty() to check whether the collection is empty or not.(¡‹Ÿşÿÿÿÿ8Ûˆù«.
+{
+java:S14885"`Immediately return this expression instead of assigning it to the temporary variable "fragment".(Ì²‚şÿÿÿÿ
+?	java:S131Ê""Add a default case to this switch.(¨›áµ8Ûˆù«.
+Y
+java:S1155U">Use isEmpty() to check whether the collection is empty or not.(ş¹ÿÜúÿÿÿÿ
+K	java:S108¨")Either remove or fill this block of code.(±Ÿ—±ÿÿÿÿÿ8Ûˆù«.
+W
+java:S1854°"9Remove this useless assignment to local variable "price".(£è÷8Ûˆù«.
+O
+java:S1144Æ"1Remove this unused private "getRealPrice" method.(óÙù£8Ûˆù«.

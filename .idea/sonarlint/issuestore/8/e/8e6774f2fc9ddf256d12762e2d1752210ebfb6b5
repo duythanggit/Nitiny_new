@@ -1,0 +1,17 @@
+
+W
+java:S1854–"9Remove this useless assignment to local variable "price".(£è÷8äíŸë±.
+h
+java:S2147ë"ECombine this catch with the one at line 233, which has the same body.(‰•’şÿÿÿÿ8äíŸë±.
+K	java:S108ë")Either remove or fill this block of code.(‰•’şÿÿÿÿ8äíŸë±.
+z
+java:S1104="dMake myCustomEditTextListener a static final constant or non-public and provide accessors if needed.(—İÑı
+o
+java:S3776E"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(‘‘ò­8­º‰³.
+D	java:S108é")Either remove or fill this block of code.(é–³öûÿÿÿÿ
+W
+java:S1854¯"9Remove this useless assignment to local variable "price".(£è÷8äíŸë±.
+œ
+java:S1186v"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¹Æº×şÿÿÿÿ
+>	java:S108}")Either remove or fill this block of code.(ÃÁò’
+W	java:S125S"<This block of commented-out lines of code should be removed.(Óş¸)8‰øŸú¹.

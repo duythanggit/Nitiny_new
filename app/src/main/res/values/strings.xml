@@ -1,0 +1,199 @@
+<resources>
+    <string name="app_name">Nitiny</string>
+    <string name="digits_number">0123456789</string>
+    <string name="app_market_link">"https://play.google.com/store/apps/details?id="</string>
+    <string name="app_google_play_store_link">"market://details?id="</string>
+    <string name="message_unknow_error">Đã xảy ra lỗi không xác định, Vui lòng kiểm tra kết nối mạng và thử lại!</string>
+    <string name="default_notification_channel_id">CHAppVN24h:CHANNEL</string>
+    <string name="google_maps_key">AIzaSyCkWiNIXjc4G_A3CrD9Zo0ACDmsPjeWvag</string>
+
+    <!--FONT-->
+    <string name="font_HelveticaNeue_Regular">fonts/HelveticaNeue.ttf</string>
+    <string name="font_HelveticaNeue_Bold">fonts/HelveticaNeue-Bold.ttf</string>
+    <string name="font_HelveticaNeue_Medium">fonts/HelveticaNeue-Medium.ttf</string>
+    <string name="font_HelveticaNeue_Light">fonts/HelveticaNeue-Light.ttf</string>
+    <string name="font_HelveticaNeue_Italic">fonts/HelveticaNeue-Italic.ttf</string>
+
+
+    <string name="msg_sologan">Nơi trải nghiệm dịch vụ và mua sắm dành uy tín</string>
+    <string name="title_welcome">Chào mừng bạn đến với</string>
+    <string name="title_shop_name">Nitiny</string>
+    <string name="title_button_starter">Bắt đầu ngay</string>
+
+    <!-- label bottom navigation -->
+    <string name="title_home">Dịch vụ</string>
+    <string name="title_favourite">Chat với shop</string>
+    <string name="title_history">Lịch sử mua hàng</string>
+    <string name="label_history">Lịch sử giao dịch</string>
+    <string name="title_list_link">Danh sách khách đã liên kết</string>
+    <string name="title_profile">Chào mừng</string>
+
+    <string name="title_register">ĐĂNG KÝ</string>
+    <string name="title_login">ĐĂNG NHẬP</string>
+    <string name="summary_register">Đăng ký để trở thành thành viên của chúng tôi</string>
+    <string name="title_fullname">Họ và tên</string>
+    <string name="title_phone">Số điện thoại</string>
+    <string name="title_password">Mật Khẩu</string>
+    <string name="title_new_password">Mật khẩu mới</string>
+    <string name="title_re_password">Nhập lại mật khẩu</string>
+    <string name="title_otp">Nhập mã OTP</string>
+    <string name="summary_otp">Vui lòng nhập mã OTP được gửi về số điện thoại của bạn</string>
+    <string name="hint_otp">Nhập mã OTP</string>
+    <string name="title_resend">Gửi lại</string>
+    <string name="msg_policy">Bằng cách đăng ký, bạn đồng ý với điều khoản dịch vụ\nChính sách riêng tư</string>
+    <string name="title_vietnamese">Tiếng Việt</string>
+    <string name="title_english">English</string>
+    <string name="title_other">Other</string>
+    <string name="summary_login">Đăng nhập để sử dụng dịch vụ của hệ thống</string>
+    <string name="title_forgot_password">Quên mật khẩu?</string>
+    <string name="title_verify">XÁC THỰC</string>
+    <string name="summary_forgot_password">Vui lòng nhập mã OTP để tiếp tục</string>
+    <string name="title_input_otp">Nhập mã OTP</string>
+    <string name="toolbar_forgot_password">Quên mật khẩu</string>
+    <string name="title_newpassword">Nhập mật khẩu mới</string>
+    <string name="title_confirm">Xác nhận</string>
+
+    <!-- màn dịch vụ sân bóng -->
+    <string name="title_my_service">Sân bóng của tôi</string>
+    <string name="title_service_manager">Quản lý sân bóng</string>
+    <string name="title_link_services">Shop Care &amp; Shop</string>
+    <string name="title_choose_services_linking">Chọn dịch vụ bạn có liên kết mã</string>
+    <string name="title_update_info_service">CẬP NHẬP THÔNG TIN</string>
+    <string name="hint_linking_code">Mã liên kết doanh nghiệp\n( VD: SB1BN )</string>
+    <string name="hint_name_company">Tên doanh nghiệp</string>
+    <string name="hint_address">Địa chỉ</string>
+    <string name="hint_note">Ghi chú</string>
+    <string name="title_upload_image">Tải ảnh lên</string>
+    <string name="title_save">Lưu</string>
+    <string name="title_toolbar_update_service">Shop Care &amp; Shop</string>
+    <string name="title_confirm_linking">XÁC NHẬN LIÊN KẾT</string>
+    <string name="des_linking_service">Cảm ơn bạn đã lựa chọn chúng tôi làm đối tác liên kết hệ thống kinh doanh. Phía hệ thống sẽ xác nhận thông tin của bạn và cung cấp quyền sử dụng cho bạn sau khi xử lý xong liên kết.</string>
+    <string name="title_list_customer_history">Danh sách khách đặt</string>
+    <string name="title_toup">Ví của tôi</string>
+    <string name="title_wallet">Ví của tôi</string>
+    <string name="title_feedback">Phản hồi</string>
+    <string name="title_notification">Thông báo</string>
+    <string name="title_change_password">Đổi mật khẩu</string>
+    <string name="title_rating_app">Đánh giá app</string>
+    <string name="title_guide">Hướng dẫn</string>
+    <string name="title_contact">Thông tin liên hệ</string>
+    <string name="title_share">Chia sẻ</string>`
+    <string name="title_customer_link_chat">Danh sách chủ shop có mã đã liên kết</string>
+    <string name="toolbar_detail">Chi tiết thông tin nhà cung cấp</string>
+    <string name="title_customer_book">Khách hàng đã đặt</string>
+    <string name="title_booking_infor">Thông tin nhận hàng</string>
+    <string name="title_booking_locate">Địa điểm</string>
+
+    <!-- màn quản lý sân bóng -->
+    <string name="title_list_customer_order">Danh sách khách đặt</string>
+    <string name="title_view_detail">Xem chi tiết</string>
+    <string name="title_cancel">Huỷ</string>
+    <string name="title_add_product">Thêm sản phẩm</string>
+    <string name="label_add_product">Thêm sản phẩm của bạn</string>
+    <string name="label_name_product">Tên sản phẩm</string>
+    <string name="label_type_product">Loại sản phẩm</string>
+    <string name="label_sale_price">Giá khuyến mãi</string>
+    <string name="label_price">Giá sản phẩm</string>
+    <string name="label_note">Ghi chú</string>
+    <string name="label_button_upload_image">Tải ảnh sản phẩm lên</string>
+    <string name="label_button_add_product">Thêm</string>
+    <string name="title_add_code">Thêm mã</string>
+    <string name="title_order">Đặt mua</string>
+    <string name="title_schedule">Đặt quà</string>
+    <string name="title_wellcome">Chào mừng</string>
+    <string name="title_order_date">Chọn ngày đặt</string>
+    <string name="title_order_time">Chọn giờ đặt</string>
+    <string name="title_order_location">Địa chỉ nhận hàng</string>
+    <string name="title_other_requirement">Yêu cầu đặc biệt khác</string>
+    <string name="title_other_rate">Viết đánh giá</string>
+    <string name="title_scheduled_confirm">Xác nhận đơn hàng</string>
+    <string name="title_input_code">Hãy nhập mã cửa hàng, shop của bạn</string>
+    <string name="title_shop_linked">Shop đã liên kết mã</string>
+    <string name="title_insert_code">Nhập mã liên kết</string>
+    <string name="title_rating_service">Đánh giá dịch vụ đang sử dụng</string>
+    <string name="title_salon">Salon</string>
+    <string name="title_shop">Cửa hàng</string>
+    <string name="title_staff">Nhân viên</string>
+    <string name="title_send">Gửi</string>
+    <string name="title_count">Số lượng</string>
+    <string name="title_price">Giá tiền</string>
+    <string name="title_total_count">Tổng số lượng: </string>
+    <string name="title_total_price">Tổng tiền:</string>
+    <string name="title_add_receive">Nhận hàng tại shop</string>
+    <string name="title_shoose_shop">Chọn shop:</string>
+
+    <string name="msg_error_empty_name">Vui lòng nhập họ và tên</string>
+    <string name="msg_error_empty_phone">Vui lòng nhập số điện thoại</string>
+    <string name="msg_error_empty_password">Vui lòng nhập mật khẩu</string>
+    <string name="msg_error_empty_repassword">Vui lòng nhập mật khẩu nhập lại</string>
+    <string name="msg_error_invalid_phone">Vui lòng nhập số điện thoại hợp lệ</string>
+    <string name="msg_error_invalid_repassword">Mật khẩu nhập lại không khớp</string>
+    <string name="msg_error_empty_otp">Vui lòng nhập mã OTP</string>
+    <string name="msg_error_invalid_otp">Mã OTP không khớp</string>
+    <string name="msg_error_empty_code">Vui lòng nhập mã liên kết</string>
+    <string name="msg_error_hide_post">Sản phẩm/ dịch vụ này đã bị ẩn. Vui lòng chọn sản phẩm hoặc dịch vụ khác.</string>
+
+    <string name="title_other_sign_in">Hoặc đăng nhập với</string>
+    <string name="msg_error_login_google">Không thể đăng nhập với Google</string>
+    <string name="msg_error_login_google_loss_params">Chưa lấy được đầy đủ thông tin đăng nhập của bạn</string>
+    <string name="msg_success_booking">Bạn đã đặt quà thành công</string>
+    <string name="title_name_booking">Tên sản phẩm:</string>
+    <string name="title_count_booking">Số lượng:</string>
+    <string name="title_total_price_booking">Tổng tiền:</string>
+    <string name="title_price_booking">Giá tiền:</string>
+    <string name="msg_no_shop">Bạn chưa liên kết với shop nào có dịch vụ này</string>
+    <string name="title_input_address">Nhập địa chỉ</string>
+    <string name="title_booking_listing">Danh sách đơn hàng</string>
+    <string name="title_shop_infor">Thông tin chủ shop</string>
+    <string name="title_shop_address">Địa điểm</string>
+    <string name="title_customer_infor">Thông tin người đặt</string>
+    <string name="title_detail_product">Chi tiết sản phẩm</string>
+    <string name="title_detail_history">Chi tiết lịch sử dịch vụ</string>
+    <string name="title_detail_booking">Chi tiết đơn hàng</string>
+    <string name="title_delete_product">Xoá</string>
+    <string name="title_not_detect_current_location">Chưa có thông tin địa chỉ của shop.</string>
+    <string name="msg_error_validate_address">Bạn cần nhập đủ thông tin địa chỉ nhận hàng</string>
+    <string name="msg_back_again_to_exit">Nhấn phím BACK lần nữa để thoát ứng dụng</string>
+    <string name="msg_empty_phone">Bạn chưa nhập số điện thoại</string>
+    <string name="msg_change_password_success">Đổi mật khẩu thành công</string>
+    <string name="title_accept">Đồng ý</string>
+    <string name="title_home_add_code">Thêm mã</string>
+    <string name="title_home_search">Tìm kiếm</string>
+    <string name="title_register_login"><span><u>Bạn chưa có tài Khoản?<p><font color="#4A97F7"> Đăng ký</font></p> tại đây.</u></span></string>
+    <string name="str_login_in_register"><span><u>Bạn có tài Khoản?<p><font color="#4A97F7"> Đăng nhập</font></p> tại đây.</u></span></string>
+    <string name="title_policy_and_tearms"><u>Điều khoản dịch vụ &amp; Chính sách sử dụng</u></string>
+    <string name="title_code">Nhập mã giới thiệu ( có thể bỏ qua )</string>
+    <string name="str_count_down_time">mã xác thự còn %s</string>
+    <string name="str_get_code">Lấy mã</string>
+    <string name="str_btn_confirm">Gửi mã xác thực</string>
+    <string name="str_home">Trang chủ</string>
+    <string name="str_contact"> Nếu bạn gặp khó khăn \n Xin vui lòng gọi <b>0987875427</b> </string>
+    <string name="str_welcome_shop">Nitiny chào mừng!</string>
+    <string name="str_view_all">Xem tất cả</string>
+    <string name="str_promotion">Khuyến mãi</string>
+    <string name="str_newspaper">Tin tức</string>
+    <string name="str_service">Quà tặng</string>
+    <string name="str_production">Sản phẩm</string>
+    <string name="str_news_paper">Tin tức</string>
+    <string name="str_search_product">Tìm sản phẩm</string>
+    <string name="str_category">Danh mục:</string>
+    <string name="str_total_number">Xuất xứ:</string>
+    <string name="str_price_buy">Giá:</string>
+    <string name="str_price_sale">Giá sỉ:</string>
+    <string name="str_note">Ghi chú:</string>
+    <string name="str_type">Loại:</string>
+    <string name="str_descrip">Mô tả:</string>
+    <string name="title_order_in_shop">Nhận hàng tại shop</string>
+    <string name="str_date_apply">Ngày ap dụng:</string>
+    <string name="str_date_expried">Hạn áp dung:</string>
+    <string name="title_detail_promotion">Chi tiết khuyến mãi</string>
+    <string name="title_detail_news_paper">Chi tiết tin tức</string>
+    <string name="title_accumulate_points">Tích điểm</string>
+    <string name="str_choose_quantity">Chọn số lượng đặt mua</string>
+    <string name="str_price">Giá</string>
+    <string name="str_add_to_cart">Thêm vào giỏ hàng</string>
+    <string name="ask_del_these_items">Bạn có thật sự muốn xóa sản phẩm này?</string>
+    <string name="dialog_OK">ĐỒNG Ý</string>
+    <string name="dialog_CANCEL">HỦY BỎ</string>
+
+</resources>

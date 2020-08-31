@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.accumulatepoint.AccumulatePointFragment"
+    tools:ignore="MissingPrefix">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cartShopAvatar"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:visibility="gone"
+        app:cardCornerRadius="@dimen/size_200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/imgShopAvatar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:src="@drawable/avb_logo"
+            android:visibility="gone" />
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layouShopInfor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_2dp"
+        app:layout_constraintBottom_toBottomOf="@id/cartShopAvatar"
+        app:layout_constraintStart_toEndOf="@id/cartShopAvatar"
+        app:layout_constraintTop_toTopOf="@id/cartShopAvatar">
+
+        <TextView
+            android:id="@+id/txtShopName"
+            fontPath="@string/font_HelveticaNeue_Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_15dp"
+            android:text="Shop AnvietBep"
+            android:visibility="gone"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt1"
+            fontPath="@string/font_HelveticaNeue_Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" - "
+            android:visibility="gone"
+            app:layout_constraintStart_toEndOf="@id/txtShopName"
+            app:layout_constraintTop_toTopOf="@id/txtShopName" />
+
+        <TextView
+            android:id="@+id/txtRole"
+            fontPath="@string/font_HelveticaNeue_Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Khách hàng"
+            android:visibility="gone"
+            app:layout_constraintStart_toEndOf="@id/txt1"
+            app:layout_constraintTop_toTopOf="@id/txtShopName" />
+
+        <TextView
+            android:id="@+id/txtType"
+            fontPath="@string/font_HelveticaNeue_Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_5dp"
+            android:text="Vip"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@id/txtShopName"
+            app:layout_constraintTop_toBottomOf="@id/txtShopName" />
+
+        <TextView
+            android:id="@+id/txt2"
+            fontPath="@string/font_HelveticaNeue_Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" - "
+            android:visibility="gone"
+            app:layout_constraintStart_toEndOf="@id/txtType"
+            app:layout_constraintTop_toTopOf="@id/txtType" />
+
+        <TextView
+            android:id="@+id/txtPoint"
+            fontPath="@string/font_HelveticaNeue_Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_5dp"
+            android:text="200 điểm"
+            android:textColor="#D7CC75"
+            android:textSize="@dimen/size_16dp"
+            android:visibility="gone"
+            app:layout_constraintStart_toEndOf="@id/txt2"
+            app:layout_constraintTop_toTopOf="@id/txt2" />
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:id="@+id/lineView"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/size_20dp"
+        android:background="@color/blackT20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtTimeLeft" />
+
+    <TextView
+        android:id="@+id/txtTitlePointHistory"
+        fontPath="@string/font_HelveticaNeue_Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_20dp"
+        android:layout_marginTop="@dimen/size_10dp"
+        android:text="Lịch sử tích điểm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lineView" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layoutChooseTimes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_layout_choose_times"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtTitlePointHistory">
+
+        <TextView
+            android:id="@+id/txtTime"
+            fontPath="@string/font_HelveticaNeue_Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_15dp"
+            android:paddingTop="@dimen/size_5dp"
+            android:paddingBottom="@dimen/size_5dp"
+            android:text=""
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgArrow"
+            android:layout_width="@dimen/size_20dp"
+            android:layout_height="@dimen/size_20dp"
+            android:layout_marginEnd="@dimen/size_6dp"
+            android:contentDescription="@null"
+            android:padding="@dimen/size_5dp"
+            android:src="@drawable/ic_arrow_down"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/size_3dp"
+            android:layout_marginEnd="@dimen/size_2dp"
+            android:layout_marginBottom="@dimen/size_3dp"
+            android:background="#898989"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imgArrow"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcvPointHistory"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/size_8dp"
+        android:layout_marginTop="@dimen/size_10dp"
+        android:layout_marginEnd="@dimen/size_8dp"
+        android:orientation="vertical"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutChooseTimes"
+        app:layout_constraintVertical_bias="1.0"
+        tools:listitem="@layout/item_history_point" />
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/clPoint"
+        android:paddingStart="@dimen/size_5dp"
+        android:paddingEnd="@dimen/size_5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingTop="@dimen/size_30dp"
+        android:paddingBottom="@dimen/size_10dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imgAccomulate"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:src="@drawable/accomulate"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txtAccomulatePoits"
+            android:layout_marginStart="@dimen/size_10dp"
+            fontPath="@string/font_HelveticaNeue_Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="200 điểm"
+            android:textColor="#D7CC75"
+            android:textSize="@dimen/size_16dp"
+            app:layout_constraintBottom_toBottomOf="@id/imgAccomulate"
+            app:layout_constraintStart_toEndOf="@id/imgAccomulate"
+            app:layout_constraintTop_toTopOf="@id/imgAccomulate"
+            tools:ignore="MissingConstraints" />
+    </android.support.constraint.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/txtTimeLeft"
+        fontPath="@string/font_HelveticaNeue_Light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.000 xu sẽ hết hạn vào lúc..."
+        android:textSize="@dimen/size_16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clPoint"
+        tools:ignore="MissingConstraints" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,18 @@
+
+œ
+java:S1186x"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¹Æº×þÿÿÿÿ
+Q	java:S125t"<This block of commented-out lines of code should be removed.(¹ä®ã
+m
+java:S14504"WRemove the "idStatus" field and declare it as a local variable in the relevant methods.(ÚÔ²é
+=
+java:S1604b"(Make this anonymous inner class a lambda(®ì¬&
+S
+java:S1068+"8Remove this unused "statusBookingAdapter" private field.(èÖ™³ûÿÿÿÿ
+B
+java:S10684",Remove this unused "idStatus" private field.(ÚÔ²é
+{
+java:S14887"`Immediately return this expression instead of assigning it to the temporary variable "fragment".(àžÙŽøÿÿÿÿ
+W	java:S125"<This block of commented-out lines of code should be removed.(”«õéûÿÿÿÿ
+P	java:S125H"<This block of commented-out lines of code should be removed.(“ÙÛ'
+
+java:S1186—"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ñ¸Žÿÿÿÿÿ

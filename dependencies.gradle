@@ -1,0 +1,168 @@
+ext {
+    applicationId = "vn.chapp.vn24h"
+    compileSdkVersion = 28
+    buildToolsVersion = '28.0.3'
+    minSdkVersion = 21
+    targetSdkVersion = 28
+
+    supportLibVersion = '28.0.0'
+    constraintLayoutVersion = '1.1.3'
+    materialEdtVersion = '2.1.4'
+
+    glideVersion = '4.8.0'
+    retrofitVersion = '2.5.0'
+    rxVersion = '2.2.4'
+    rxAndroid = '2.1.0'
+    okHttpVersion = '3.12.0'
+    eventBusVersion = '3.1.1'
+    calligraphyVersion = '2.3.0'
+    keyboardEventVersion = '2.1.0'
+    circularImageVersion = '3.0.2'
+    draggerVersion = '2.19'
+    butterKnifeVersion = '8.8.1'
+    timberVersion = '4.7.0'
+    leakCananyVersion = '1.5.4'
+    googleServiceVersion = '16.0.0'
+    dexterVersion = '4.2.0'
+    jobDispatcherVersion = '0.8.5'
+    rippleBgVersion = '1.0.1'
+    pinViewVersion = '1.4.2'
+    ratingbarVersion = '1.2.0'
+    crashlyticVersion = '2.9.8@aar'
+    firebaseVersion = '17.3.4'
+    discreteScrollVersion = '1.4.9'
+    pageIndicatorViewVersion = '1.0.2'
+    exoVersion = '2.8.2'
+    RNcryptorVersion = '0.0.9'
+    monthAndYearPickerVersion = '1.3.0'
+    clansFabVersion = '1.6.4'
+    roundedImageViewVersion = '2.3.0'
+    compressorVersion       = '2.1.0'
+    facebookSDKVersion      = '5.4.0'
+    keyboardvisibilityeventVesion = '2.1.0'
+    picassoVersion = '2.5.2'
+    nineoldVersion = '2.4.0'
+    sliderVersion = '1.1.5@aar'
+    imagePickerVersion = '1.3.0'
+
+    googleMapVersion = '15.0.1'
+    ggAuthVersion = '16.0.1'
+
+    socketIOVersion = '0.6.0'
+
+
+    junitVersion = '4.12'
+    runnerVersion = '1.0.1'
+    espressoVersion = '3.0.1'
+    materialRatingbarVersion = '1.3.1'
+    notificationVersion = '1.0.2'
+
+    deps = [
+
+            appcompat           : "com.android.support:appcompat-v7:$supportLibVersion",
+            supportDesign       : "com.android.support:design:${supportLibVersion}",
+            supportCardview     : "com.android.support:cardview-v7:$supportLibVersion",
+            supportV4           : "com.android.support:support-v4:$supportLibVersion",
+            constraintLayout    : "com.android.support.constraint:constraint-layout:$constraintLayoutVersion",
+            recyclerView        : "com.android.support:recyclerview-v7:$supportLibVersion",
+            materialEdt         : "com.rengwuxian.materialedittext:library:$materialEdtVersion",
+
+            /*Glide: https://github.com/bumptech/glide*/
+            /*Glide: https://github.com/bumptech/glide*/
+            glide               : "com.github.bumptech.glide:glide:$glideVersion",
+            glideCompile        : "com.github.bumptech.glide:compiler:$glideVersion",
+            /*Retrofit: https://github.com/square/retrofit*/
+            retrofit            : "com.squareup.retrofit2:retrofit:$retrofitVersion",
+            retrofitConvert     : "com.squareup.retrofit2:converter-gson:$retrofitVersion",
+            retrofitAdapter     : "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion",
+            /*RxJava: https://github.com/ReactiveX/RxJava*/
+            rxjava              : "io.reactivex.rxjava2:rxjava:$rxVersion",
+            /*RxAndroid:https://github.com/ReactiveX/RxAndroid*/
+            rxandroid           : "io.reactivex.rxjava2:rxandroid:$rxAndroid",
+            /*OkHttp: http://square.github.io/okhttp/*/
+            okHttp              : "com.squareup.okhttp3:okhttp:$okHttpVersion",
+            okHttpLogging       : "com.squareup.okhttp3:logging-interceptor:$okHttpVersion",
+            /*EventBus: https://github.com/greenrobot/EventBus*/
+            eventBus            : "org.greenrobot:eventbus:$eventBusVersion",
+            /*Calligraphy*/
+            calligraphy         : "uk.co.chrisjenx:calligraphy:$calligraphyVersion",
+
+            /*https://github.com/yshrsmz/KeyboardVisibilityEvent*/
+            keyboardEvent       : "net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:$keyboardEventVersion",
+
+            circularImageV      : "com.mikhaellopez:circularimageview:$circularImageVersion",
+
+            /*Dagger 2*/
+            dagger              : "com.google.dagger:dagger:$draggerVersion",
+            daggerCompiler      : "com.google.dagger:dagger-compiler:$draggerVersion",
+            daggerProcessor     : "com.google.dagger:dagger-compiler:$draggerVersion",
+            jsr250              : 'javax.annotation:jsr250-api:1.0',
+            javaxInject         : 'javax.inject:javax.inject:1',
+
+            /*ButterKnife*/
+            butterKnife         : "com.jakewharton:butterknife:$butterKnifeVersion",
+            butterKnifeProcessor: "com.jakewharton:butterknife-compiler:$butterKnifeVersion",
+
+            /*Timber*/
+            timber              : "com.jakewharton.timber:timber:$timberVersion",
+
+            /*Leak Canany*/
+            leakCananyDebug     : "com.squareup.leakcanary:leakcanary-android:$leakCananyVersion",
+            leakCananyRelease   : "com.squareup.leakcanary:leakcanary-android-no-op:$leakCananyVersion",
+
+            /*Crashlytic*/
+            crashlytic          : "com.crashlytics.sdk.android:crashlytics:$crashlyticVersion",
+
+            /*Google Service*/
+            googleMap           : "com.google.android.gms:play-services-maps:$googleServiceVersion",
+            location            : "com.google.android.gms:play-services-location:$googleServiceVersion",
+            ggPlaces            : "com.google.android.gms:play-services-places:$googleServiceVersion",
+
+            /*Permission*/
+            dexter              : "com.karumi:dexter:$dexterVersion",
+
+            /*RippleBackground*/
+            rippleBg            : "com.skyfishjy.ripplebackground:library:$rippleBgVersion",
+
+            /*JobDispatcher*/
+            jobDispatcher       : "com.firebase:firebase-jobdispatcher:$jobDispatcherVersion",
+
+            /*PinView*/
+            pinView             : "com.chaos.view:pinview:$pinViewVersion",
+            ratingbar           : "me.zhanghai.android.materialratingbar:library:$ratingbarVersion",
+            googleService       : 'com.google.gms.google-services',
+            firebaseMsg         : "com.google.firebase:firebase-messaging:$firebaseVersion",
+            ggAuth              : "com.google.android.gms:play-services-auth:$ggAuthVersion",
+            discreteScrollView  : "com.yarolegovich:discrete-scrollview:$discreteScrollVersion",
+            pageIndicatorView   : "com.romandanylyk:pageindicatorview:$pageIndicatorViewVersion",
+
+            /*RNcryptor*/
+            rncryptor           : "com.github.tgio:rncryptor-native:$RNcryptorVersion",
+
+            junit               : "junit:junit:$junitVersion",
+            runner              : "com.android.support.test:runner:$runnerVersion",
+            espresso            : "com.android.support.test.espresso:espresso-core:$espressoVersion",
+            supportAnnotation   : "com.android.support:support-annotations:$supportLibVersion",
+            notificationBadge   : "com.nex3z:notification-badge:$notificationVersion",
+            materialRatingbar   : "me.zhanghai.android.materialratingbar:library:$materialRatingbarVersion",
+
+            monthAndYearPicker  : "com.whiteelephant:monthandyearpicker:$monthAndYearPickerVersion",
+            clansFab            : "com.github.clans:fab:$clansFabVersion",
+            roundedImageView    : "com.makeramen:roundedimageview:$roundedImageViewVersion",
+            compressor          : "id.zelory:compressor:$compressorVersion",
+            facebookSDK         : "com.facebook.android:facebook-android-sdk:$facebookSDKVersion",
+            keyboardvisibilityevent: "net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:$keyboardvisibilityeventVesion",
+            picasso             : "com.squareup.picasso:picasso:$picassoVersion",
+            nineold             : "com.nineoldandroids:library:$nineoldVersion",
+            slider              : "com.daimajia.slider:library:$sliderVersion",
+            imagePicker         : "com.github.nguyenhoanglam:ImagePicker:$imagePickerVersion",
+
+            googleMap           : "com.google.android.gms:play-services-maps:$googleMapVersion",
+            googleFirebaseMess  : "com.google.firebase:firebase-messaging:$firebaseVersion",
+
+            socketIO            : "com.github.nkzawa:socket.io-client:$socketIOVersion"
+
+    ]
+
+
+}

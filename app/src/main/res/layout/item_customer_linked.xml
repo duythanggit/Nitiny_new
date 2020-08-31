@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="@dimen/size_8dp"
+    android:paddingBottom="@dimen/size_8dp"
+    android:orientation="vertical">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_border_bottom"
+        android:paddingBottom="@dimen/size_16dp"
+        android:paddingTop="@dimen/size_16dp">
+        <ImageView
+            android:id="@+id/civAvatar"
+            android:layout_width="@dimen/size_65dp"
+            android:layout_height="@dimen/size_50dp"
+            android:src="@drawable/img_splash_logo"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@drawable/bg_border_radius"
+            android:scaleType="fitXY"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_diamond"
+            app:layout_constraintBottom_toBottomOf="@id/civAvatar"
+            app:layout_constraintEnd_toEndOf="@id/civAvatar"
+            android:layout_marginBottom="@dimen/size_5dp"
+            android:layout_marginEnd="@dimen/size_4dp" />
+        <LinearLayout
+            android:id="@+id/lnRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingLeft="@dimen/size_8dp">
+            <ImageView
+                android:id="@+id/imgCall"
+                android:layout_width="@dimen/size_20dp"
+                android:layout_height="@dimen/size_20dp"
+                android:src="@drawable/ic_arrow_right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnFunction"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_30dp"
+            app:layout_constraintStart_toEndOf="@id/civAvatar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/lnRight"
+            style="@style/ConstraintCenterVertical"
+            android:layout_marginStart="@dimen/size_15dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toEndOf="@id/civAvatar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/lnRight">
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Mã Hàn"
+                    fontPath="@string/font_HelveticaNeue_Medium"
+                    style="@style/ConstraintCenterVertical"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    tools:ignore="MissingPrefix"
+                    android:maxLength="15"
+                    android:layout_gravity="center_vertical" />
+                <View
+                    android:layout_width="@dimen/size_8dp"
+                    android:layout_height="@dimen/size_1dp"
+                    android:background="@color/color999999"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginHorizontal="@dimen/size_8dp" />
+                <TextView
+                    android:id="@+id/tvType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Mã Hàn"
+                    fontPath="@string/font_HelveticaNeue_Medium"
+                    style="@style/ConstraintCenterVertical"
+                    android:textColor="@color/colorFF8800"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    tools:ignore="MissingPrefix" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/size_6dp">
+                <TextView
+                    android:id="@+id/tvTypeCustomer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Khách hàng"
+                    fontPath="@string/font_HelveticaNeue_Medium"
+                    style="@style/ConstraintCenterVertical"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    tools:ignore="MissingPrefix" />
+                <View
+                    android:layout_width="@dimen/size_8dp"
+                    android:layout_height="@dimen/size_1dp"
+                    android:background="@color/color999999"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginHorizontal="@dimen/size_8dp"/>
+                <TextView
+                    android:id="@+id/tvPoint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="6 tháng trước"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    style="@style/ConstraintCenterVertical"
+                    android:textColor="@color/color717171"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

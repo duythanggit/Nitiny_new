@@ -1,0 +1,30 @@
+
+a
+java:S1155">Use isEmpty() to check whether the collection is empty or not.(‰¢¡ñşÿÿÿÿ8ÿÅ™Ç°.
+\
+java:S1155…">Use isEmpty() to check whether the collection is empty or not.(¾şÏÁ8ÿÅ™Ç°.
+b
+java:S1301ê"KReplace this "switch" statement by "if" statements to increase readability.(ÑÜ¬²
+e
+java:S4201®"IRemove this unnecessary null check; "instanceof" returns false for nulls.(‚ùøÿÿÿÿÿ
+e
+java:S4201¦"IRemove this unnecessary null check; "instanceof" returns false for nulls.(‚ùøÿÿÿÿÿ
+=	java:S131’""Add a default case to this switch.(¼œóÛüÿÿÿÿ
+8	java:S131Ú""Add a default case to this switch.(ÑÜ¬²
+K
+java:S1066"/Merge this if statement with the enclosing one.(‰¢¡ñşÿÿÿÿ
+
+java:S1186Ò"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¹Æº×şÿÿÿÿ
+h
+java:S3776j"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(ÔĞ£™
+[
+java:S1117¼"?Rename "categoryAdd" which hides the field declared at line 83.(–Û©’üÿÿÿÿ
+E
+java:S2114º"(Remove or correct this "removeAll" call.(£…€"8ÿÅ™Ç°.
+?	java:S108ì")Either remove or fill this block of code.(÷Ù“¶
+<	java:S131s""Add a default case to this switch.(¼œóÛüÿÿÿÿ
+f
+java:S1192{"KDefine a constant instead of duplicating this literal "Táº¥t cáº£" 3 times.(®ÃÅ÷úÿÿÿÿ
+W	java:S125Ù"<This block of commented-out lines of code should be removed.(®Ğ¥ğÿÿÿÿÿ
+F
+java:S1066…"/Merge this if statement with the enclosing one.(¾şÏÁ

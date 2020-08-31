@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingPrefix">
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/imgAvatarHost"
+        android:layout_width="@dimen/size_70dp"
+        android:layout_height="@dimen/size_70dp"
+        tools:src="@drawable/ic_vietnamese"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/size_25dp"
+        app:layout_constraintEnd_toStartOf="@+id/lnInforHost" />
+    <LinearLayout
+        android:id="@+id/lnInforHost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgAvatarHost"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/size_16dp">
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Sân: Hai kan1 (mã: SHK 25)"
+            android:textColor="@color/color242937"
+            fontPath="@string/font_HelveticaNeue_Medium" />
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="My Dinh, Ha Noi"
+            android:textColor="@color/color242937"
+            android:textSize="@dimen/text_size_12sp"
+            fontPath="@string/font_HelveticaNeue_Medium"
+            android:drawableLeft="@drawable/ic_fill_address"
+            android:drawablePadding="@dimen/size_8dp"
+            android:layout_marginTop="@dimen/size_3dp"
+            android:gravity="center_vertical"/>
+        <TextView
+            android:id="@+id/tvPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="908.783.5699"
+            android:textColor="@color/color242937"
+            android:textSize="@dimen/text_size_12sp"
+            fontPath="@string/font_HelveticaNeue_Medium"
+            android:drawableLeft="@drawable/ic_fill_phone"
+            android:layout_marginTop="@dimen/size_3dp"
+            android:drawablePadding="@dimen/size_8dp"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,77 @@
+
+|
+java:S1450j"aRemove the "listProductSpinner" field and declare it as a local variable in the relevant methods.(‘£ıŞüÿÿÿÿ
+e
+java:S4201Ô"IRemove this unnecessary null check; "instanceof" returns false for nulls.(‚ùøÿÿÿÿÿ
+W
+java:S1854ù"9Remove this useless assignment to local variable "price".(£è÷8ÍéêÉ±.
+M
+java:S1066Œ"/Merge this if statement with the enclosing one.(â“ˆŞ8ÍéêÉ±.
+a
+java:S2147¨"ECombine this catch with the one at line 294, which has the same body.(‰•’şÿÿÿÿ
+^	java:S125Š"<This block of commented-out lines of code should be removed.(¶íù»ıÿÿÿÿ8ÍéêÉ±.
+R	java:S125Ú"<This block of commented-out lines of code should be removed.(Î©“¥
+D	java:S108ñ")Either remove or fill this block of code.(é–³öûÿÿÿÿ
+D
+java:S1604º"(Make this anonymous inner class a lambda(ÃÂ•ışÿÿÿÿ
+M
+java:S1066‡"/Merge this if statement with the enclosing one.(·ı¥8ÍéêÉ±.
+F
+java:S1066³"/Merge this if statement with the enclosing one.(‰¿¸Ù
+u
+java:S3776Ë"RRefactor this method to reduce its Cognitive Complexity from 32 to the 15 allowed.(ôœèñıÿÿÿÿ8ÍéêÉ±.
+D	java:S108È")Either remove or fill this block of code.(é–³öûÿÿÿÿ
+[
+java:S1854"=Remove this useless assignment to local variable "shopPhone".(úÿöÀ8ÍéêÉ±.
+D	java:S108Ê")Either remove or fill this block of code.(‰•’şÿÿÿÿ
+h
+java:S2147ó"ECombine this catch with the one at line 497, which has the same body.(‰•’şÿÿÿÿ8ÍéêÉ±.
+^	java:S125ì"<This block of commented-out lines of code should be removed.(û¢Şëûÿÿÿÿ8ÍéêÉ±.
+W	java:S125æ"<This block of commented-out lines of code should be removed.(šÔÇƒşÿÿÿÿ
+D	java:S108¦")Either remove or fill this block of code.(é–³öûÿÿÿÿ
+G
+java:S1068h",Remove this unused "products" private field.(”¢ÏÒùÿÿÿÿ
+D	java:S108ú")Either remove or fill this block of code.(±Ÿ—±ÿÿÿÿÿ
+|
+java:S2293Î"YReplace the type specification in this constructor call with the diamond operator ("<>").(¬º¥÷ıÿÿÿÿ8ÍéêÉ±.
+W
+java:S1854á"9Remove this useless assignment to local variable "price".(£è÷8ÍéêÉ±.
+v
+java:S2293ß"YReplace the type specification in this constructor call with the diamond operator ("<>").(Šœ8ÍéêÉ±.
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(˜œ˜êÿÿÿÿÿ
+Y	java:S125ï"<This block of commented-out lines of code should be removed.(öÅşÆ8ÍéêÉ±.
+\
+java:S1117±"@Rename "userDefault" which hides the field declared at line 111.(•Ô¯Ùùÿÿÿÿ
+D	java:S108¨")Either remove or fill this block of code.(‰•’şÿÿÿÿ
+w
+java:S2293Í"YReplace the type specification in this constructor call with the diamond operator ("<>").(» ÷‚8ÍéêÉ±.
+W
+java:S1854±"9Remove this useless assignment to local variable "price".(£è÷8ÍéêÉ±.
+E
+java:S1068o"/Remove this unused "userDefault" private field.(ÎÇ©Ö
+N
+java:S1068º"2Remove this unused "runnableDirect" private field.(ÃÂ•ışÿÿÿÿ
+Ÿ
+java:S1186ª"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÑÖŠÜ8ÍéêÉ±.
+R	java:S125¢"<This block of commented-out lines of code should be removed.(¢à‹õ
+W
+java:S1854É"9Remove this useless assignment to local variable "price".(£è÷8ÍéêÉ±.
+K	java:S108ó")Either remove or fill this block of code.(‰•’şÿÿÿÿ8ÍéêÉ±.
+F
+java:S1066ş"/Merge this if statement with the enclosing one.(ù¾È³
+p
+java:S1450o"ZRemove the "userDefault" field and declare it as a local variable in the relevant methods.(ÎÇ©Ö
+W	java:S125Ä"<This block of commented-out lines of code should be removed.(çùÏùÿÿÿÿ
+R
+java:S1066‚"/Merge this if statement with the enclosing one.(úË•§şÿÿÿÿ8ÍéêÉ±.
+e
+java:S4201ˆ"IRemove this unnecessary null check; "instanceof" returns false for nulls.(‚ùøÿÿÿÿÿ
+^	java:S125ú"<This block of commented-out lines of code should be removed.(¶íù»ıÿÿÿÿ8ÍéêÉ±.
+Z
+java:S1117è">Rename "scheduled" which hides the field declared at line 114.(Â˜•›üÿÿÿÿ
+a
+java:S2147Ê"ECombine this catch with the one at line 328, which has the same body.(‰•’şÿÿÿÿ
+Ÿ
+java:S1186—"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(°ÚâŞ8ÍéêÉ±.
+O
+java:S1144ö"1Remove this unused private "getRealPrice" method.(óÙù£8‹øŸú¹.

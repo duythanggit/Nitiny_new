@@ -1,0 +1,6 @@
+
+D
+java:S1604R"(Make this anonymous inner class a lambda(®ì¬&8¹Úı«.
+‚
+java:S1488."`Immediately return this expression instead of assigning it to the temporary variable "fragment".(Ğşù´øÿÿÿÿ8¹Úı«.
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(üƒàûÿÿÿÿ

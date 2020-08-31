@@ -1,0 +1,42 @@
+
+W	java:S125¨"<This block of commented-out lines of code should be removed.(¶ˆ¾Íüÿÿÿÿ
+m
+java:S1450Y"WRemove the "listShop" field and declare it as a local variable in the relevant methods.(à­ó
+?
+java:S1604Ò"(Make this anonymous inner class a lambda(„ÑñŒ
+e
+java:S4201Õ"IRemove this unnecessary null check; "instanceof" returns false for nulls.(‚ùøÿÿÿÿÿ
+W	java:S125õ"<This block of commented-out lines of code should be removed.(¥úµÿÿÿÿÿ
+O
+java:S1117ò"8Rename "shop" which hides the field declared at line 86.(¸«Æë
+=	java:S131˜""Add a default case to this switch.(Ò“ÿšùÿÿÿÿ
+
+java:S1186Î"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¹Æº×şÿÿÿÿ
+n
+java:S3776ü"RRefactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.(ã´Ìèøÿÿÿÿ
+W	java:S125÷"<This block of commented-out lines of code should be removed.(äÌüÿÿÿÿ
+e
+java:S4201È"IRemove this unnecessary null check; "instanceof" returns false for nulls.(‚ùøÿÿÿÿÿ
+K
+java:S1068["0Remove this unused "serviceTypes" private field.(üÅå„şÿÿÿÿ
+\
+java:S2147¼"ECombine this catch with the one at line 314, which has the same body.(ßÈ´
+R	java:S125¤"<This block of commented-out lines of code should be removed.(”ì„
+W	java:S125›"<This block of commented-out lines of code should be removed.(¨’Ûøÿÿÿÿ
+R	java:S125š"<This block of commented-out lines of code should be removed.(ôàŒ
+Q	java:S125Û"<This block of commented-out lines of code should be removed.(™—Ç	
+B
+java:S1068Y",Remove this unused "listShop" private field.(à­ó
+V
+java:S1117³":Rename "shopId" which hides the field declared at line 85.(ìàÅ‹üÿÿÿÿ
+?	java:S108º")Either remove or fill this block of code.(¤­ö
+n
+java:S1450S"XRemove the "idService" field and declare it as a local variable in the relevant methods.(”ØËû
+R	java:S125·"<This block of commented-out lines of code should be removed.(­£ß˜
+—
+java:S1186É"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(«à¯
+u
+java:S1450T"_Remove the "isOnlyShopLinked" field and declare it as a local variable in the relevant methods.(ë«öè
+e
+java:S4201"IRemove this unnecessary null check; "instanceof" returns false for nulls.(‚ùøÿÿÿÿÿ
+?	java:S108¼")Either remove or fill this block of code.(ßÈ´

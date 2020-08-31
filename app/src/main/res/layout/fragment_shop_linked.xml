@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shop bạn đã liên kết - chọn shop để mua hàng và đặt lịch"
+        android:textColor="@color/color242937"
+        fontPath="@string/font_HelveticaNeue_Medium"
+        android:gravity="center_horizontal"
+        android:paddingTop="@dimen/size_8dp"
+        android:paddingBottom="@dimen/size_10dp"
+        android:background="@drawable/bg_border_bottom"/>
+    <vn.chapp.vn24h.base.BaseRecyclerView
+        android:id="@+id/rcShopLinked"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

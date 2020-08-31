@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingPrefix">
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:src="@drawable/logo_login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:text="Đăng ký"
+            android:textColor="@color/color3A3A3A"
+            android:textSize="@dimen/text_size_22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivLogo" />
+
+        <TextView
+            android:id="@+id/textView2"
+            fontPath="@string/font_HelveticaNeue_Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/summary_login"
+            android:textColor="@color/color3A3A3A"
+            android:textSize="@dimen/text_size_14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+        <EditText
+            android:id="@+id/edtName"
+            style="@style/StyleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_20dp"
+            android:layout_marginTop="@dimen/size_15dp"
+            android:layout_marginEnd="@dimen/size_20dp"
+            android:hint="@string/title_fullname"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:paddingVertical="@dimen/size_12dp"
+            android:textSize="@dimen/text_size_14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <EditText
+            android:id="@+id/edtPhone"
+            style="@style/StyleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_20dp"
+            android:layout_marginTop="@dimen/size_15dp"
+            android:layout_marginEnd="@dimen/size_20dp"
+            android:digits="@string/digits_number"
+            android:hint="@string/title_phone"
+            android:imeOptions="actionNext"
+            android:inputType="numberSigned"
+            android:maxLength="10"
+            android:paddingVertical="@dimen/size_12dp"
+            android:textSize="@dimen/text_size_14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtName" />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            style="@style/StyleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_20dp"
+            android:layout_marginTop="@dimen/size_15dp"
+            android:layout_marginEnd="@dimen/size_20dp"
+            android:hint="@string/title_password"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:paddingVertical="@dimen/size_12dp"
+            android:textSize="@dimen/text_size_14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtPhone" />
+
+
+        <EditText
+            android:id="@+id/edtRePassword"
+            style="@style/StyleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_20dp"
+            android:layout_marginTop="@dimen/size_15dp"
+            android:layout_marginEnd="@dimen/size_20dp"
+            android:hint="@string/title_re_password"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:paddingVertical="@dimen/size_12dp"
+            android:textSize="@dimen/text_size_14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
+
+        <EditText
+            android:id="@+id/edtRefCode"
+            style="@style/StyleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_20dp"
+            android:layout_marginTop="@dimen/size_15dp"
+            android:layout_marginEnd="@dimen/size_20dp"
+            android:hint="@string/title_code"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLines="1"
+            android:paddingVertical="@dimen/size_12dp"
+            android:textSize="@dimen/text_size_14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtRePassword" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_20dp"
+            android:layout_marginTop="@dimen/size_15dp"
+            android:layout_marginEnd="@dimen/size_20dp"
+            android:background="@drawable/bkg_bottom_line"
+            android:paddingBottom="@dimen/size_2dp"
+            app:layout_constraintTop_toBottomOf="@+id/edtRefCode"
+            tools:layout_editor_absoluteX="20dp">
+
+            <EditText
+                android:id="@+id/edtOTP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/tvResendOTP"
+                android:digits="@string/digits_number"
+                android:hint="@string/hint_otp"
+                android:imeOptions="actionDone"
+                android:inputType="numberSigned"
+                android:maxLines="1"
+                android:paddingVertical="@dimen/size_12dp"
+                android:paddingEnd="@dimen/size_8dp"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                android:id="@+id/tvResendOTP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@string/font_HelveticaNeue_Bold"
+                android:paddingStart="@dimen/size_5dp"
+                android:paddingEnd="@dimen/size_5dp"
+                android:text="@string/str_get_code"
+                android:textColor="@color/color707070"
+                android:textSize="@dimen/text_size_14sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvCountDownTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_15dp"
+            android:layout_marginEnd="@dimen/size_20dp"
+            android:fontFamily="@string/font_HelveticaNeue_Bold"
+            android:text="@string/str_count_down_time"
+            android:textColor="@color/colorFF0000"
+            android:textSize="@dimen/text_size_12sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/size_20dp"
+            android:layout_marginTop="@dimen/size_32dp"
+            android:layout_marginEnd="@dimen/size_20dp"
+            android:background="@drawable/bg_buttom_highlight"
+            android:minHeight="0dp"
+            android:paddingTop="@dimen/size_10dp"
+            android:paddingBottom="@dimen/size_10dp"
+            android:text="@string/title_register"
+            android:textAllCaps="false"
+            android:textColor="@color/colorFFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCountDownTime" />
+
+
+        <TextView
+            android:id="@+id/tvLogin"
+            fontPath="@string/font_HelveticaNeue_Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_30dp"
+            android:gravity="center"
+            android:text="@string/str_login_in_register"
+            android:textColor="@color/color707070"
+            android:textSize="@dimen/text_size_14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnRegister" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_70dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvLogin" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

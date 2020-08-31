@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="MissingPrefix">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/size_8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_shop_infor"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/text_size_16sp"
+            fontPath="@string/font_HelveticaNeue_Medium" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_8dp">
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/imgAvatarHost"
+                android:layout_width="@dimen/size_70dp"
+                android:layout_height="@dimen/size_70dp"
+                android:src="@drawable/ic_avatar_default"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/lnInforHost" />
+            <LinearLayout
+                android:id="@+id/lnInforHost"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imgAvatarHost"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/size_16dp">
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sân: Hai kan1 (mã: SHK 25)"
+                    android:textColor="@color/colorText"
+                    fontPath="@string/font_HelveticaNeue_Medium" />
+                <TextView
+                    android:id="@+id/txtAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="My Dinh, Ha Noi"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/text_size_12sp"
+                    fontPath="@string/font_HelveticaNeue_Medium"
+                    android:drawableLeft="@drawable/ic_gps"
+                    android:drawablePadding="@dimen/size_8dp"
+                    android:layout_marginTop="@dimen/size_3dp"
+                    android:gravity="center_vertical"/>
+                <TextView
+                    android:id="@+id/txtPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="908.783.5699"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/text_size_12sp"
+                    fontPath="@string/font_HelveticaNeue_Medium"
+                    android:drawableLeft="@drawable/ic_phone_confirm"
+                    android:drawablePadding="@dimen/size_16dp"
+                    android:layout_marginTop="@dimen/size_3dp"
+                    android:gravity="center_vertical"/>
+            </LinearLayout>
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_booking_infor"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/text_size_16sp"
+            android:layout_marginTop="@dimen/size_16dp"
+            fontPath="@string/font_HelveticaNeue_Medium" />
+        <TextView
+            android:id="@+id/txtDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14h, T2, 12.09.2019"
+            android:textColor="@color/colorText"
+            fontPath="@string/font_HelveticaNeue_Medium"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/txtAddressReceive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Địa điểm nhận hàng"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/text_size_16sp"
+            android:layout_marginTop="@dimen/size_10dp"
+            fontPath="@string/font_HelveticaNeue_Medium" />
+
+        <TextView
+            android:id="@+id/txtServiceInfor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dịch vụ đặt"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/text_size_16sp"
+            android:layout_marginTop="@dimen/size_16dp"
+            fontPath="@string/font_HelveticaNeue_Medium"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tvLabelProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sản phẩm"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/text_size_16sp"
+            android:layout_marginTop="@dimen/size_10dp"
+            fontPath="@string/font_HelveticaNeue_Medium" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/size_8dp"
+            android:layout_marginTop="@dimen/size_8dp" />
+
+        <LinearLayout
+            android:id="@+id/lnWrapTotalProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_16dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tổng sản phẩm"
+                android:textSize="@dimen/text_size_16sp"
+                fontPath="@string/font_HelveticaNeue_Light"/>
+            <TextView
+                android:id="@+id/txtTotalProd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_16sp"
+                android:gravity="end"
+                fontPath="@string/font_HelveticaNeue_Light"
+                android:layout_marginLeft="@dimen/size_8dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_16dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_total_price_booking"
+                android:textSize="@dimen/text_size_16sp"
+                android:textColor="@color/colorText"
+                fontPath="@string/font_HelveticaNeue_Light"/>
+            <TextView
+                android:id="@+id/txtTotalPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="350.000 đ"
+                android:textSize="@dimen/text_size_16sp"
+                android:gravity="end"
+                android:textColor="@color/colorFF0000"
+                fontPath="@string/font_HelveticaNeue_Light"
+                android:layout_marginLeft="@dimen/size_8dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_16dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hình thức thanh toán: "
+                android:textSize="@dimen/text_size_16sp"
+                android:textColor="@color/colorText"
+                fontPath="@string/font_HelveticaNeue_Light"/>
+            <TextView
+                android:id="@+id/txtPaymentType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_16sp"
+                android:text="No"
+                android:textColor="@color/colorFF0000"
+                fontPath="@string/font_HelveticaNeue_Light"
+                android:layout_marginLeft="@dimen/size_8dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_8dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ghi chú: "
+                android:textSize="@dimen/text_size_16sp"
+                fontPath="@string/font_HelveticaNeue_Light"/>
+            <TextView
+                android:id="@+id/txtNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_16sp"
+                fontPath="@string/font_HelveticaNeue_Light"
+                android:layout_marginLeft="@dimen/size_8dp"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="status"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_16sp"
+            android:layout_marginTop="@dimen/size_8dp"
+            android:textColor="@color/colorText"
+            fontPath="@string/font_HelveticaNeue_Light"/>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

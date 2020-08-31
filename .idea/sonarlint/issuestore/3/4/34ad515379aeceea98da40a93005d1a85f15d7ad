@@ -1,0 +1,8 @@
+
+X	java:S125p"<This block of commented-out lines of code should be removed.(¹Õ8Íˆ€ì±.
+—
+java:S1186M"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÕÕ…‘
+i
+java:S1450?"SRemove the "name" field and declare it as a local variable in the relevant methods.(Ë¥¼
+k
+java:S1450@"URemove the "avatar" field and declare it as a local variable in the relevant methods.(á¬Ï†
