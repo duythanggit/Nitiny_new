@@ -531,6 +531,7 @@ public class ScheduleProductFragment extends BaseFragment implements SchedulePro
             }
         }
 // phong dep trai
+        //abc
         txtShopName.setText(shopName);
         txtCurrentAddress.setText(shopAddress);
     }
@@ -553,7 +554,7 @@ public class ScheduleProductFragment extends BaseFragment implements SchedulePro
             }
         }
     }
-
+    // thanggggggggggggggggg
     @Override
     public void didAddProductToCart() {
 
