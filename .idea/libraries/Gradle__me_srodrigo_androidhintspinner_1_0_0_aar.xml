@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: me.srodrigo:androidhintspinner:1.0.0@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/androidhintspinner-1.0.0.aar/69f84b2b1e2c8d04e3c6c2d0040484ec/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/androidhintspinner-1.0.0.aar/69f84b2b1e2c8d04e3c6c2d0040484ec/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/androidhintspinner-1.0.0.aar/69f84b2b1e2c8d04e3c6c2d0040484ec/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/androidhintspinner-1.0.0.aar/6a0937defde910a82a9c524fe89b3296/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/androidhintspinner-1.0.0.aar/6a0937defde910a82a9c524fe89b3296/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/androidhintspinner-1.0.0.aar/6a0937defde910a82a9c524fe89b3296/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/me.srodrigo/androidhintspinner/1.0.0/1a5de7613b5309df4d9aff50db11876fa529f959/androidhintspinner-1.0.0-javadoc.jar!/" />
