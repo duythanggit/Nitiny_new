@@ -530,7 +530,7 @@ public class ScheduleProductFragment extends BaseFragment implements SchedulePro
                 }
             }
         }
-
+// phong dep trai
         txtShopName.setText(shopName);
         txtCurrentAddress.setText(shopAddress);
     }

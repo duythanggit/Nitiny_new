@@ -1,13 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: com.mikhaellopez:circularimageview:3.0.2@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/circularimageview-3.0.2.aar/3448fc9069e8ce52d5ec56822c638a31/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/circularimageview-3.0.2.aar/3448fc9069e8ce52d5ec56822c638a31/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/circularimageview-3.0.2.aar/3448fc9069e8ce52d5ec56822c638a31/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/circularimageview-3.0.2.aar/d1c118976b80e84fc06e133d97cedb21/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/circularimageview-3.0.2.aar/d1c118976b80e84fc06e133d97cedb21/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/circularimageview-3.0.2.aar/d1c118976b80e84fc06e133d97cedb21/res" />
     </CLASSES>
-    <JAVADOC>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mikhaellopez/circularimageview/3.0.2/86810fb699b416aac09739bcea15f5586c967749/circularimageview-3.0.2-javadoc.jar!/" />
-    </JAVADOC>
+    <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mikhaellopez/circularimageview/3.0.2/e767c8be31dacdf19852b5928119d0d8cac1d1b6/circularimageview-3.0.2-sources.jar!/" />
     </SOURCES>
