@@ -1,8 +1,10 @@
 package vn.chapp.vn24h.ui.scheduledProduct;
 
+import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -382,6 +384,7 @@ public class ScheduleProductFragment extends BaseFragment implements SchedulePro
 
     @Override
     public void onDeleteItem(int position) {
+        /**
         presenter.doDeleteCart(String.valueOf(listScheduled.get(position).getProductId()));
         listScheduled.remove(position);
         scheduledAdapter.replaceData(listScheduled);
@@ -398,6 +401,127 @@ public class ScheduleProductFragment extends BaseFragment implements SchedulePro
         if(listScheduled.size()<1) {
             btnScheduled.setEnabled(false);
             btnScheduled.setBackground(getResources().getDrawable(R.drawable.bg_button_grey));
+        }
+        */
+
+        AlertDialog alertDialog = new AlertDialog.Builder(getContext())
+                .setTitle(R.string.ask_del_these_items)
+                .setPositiveButton(R.string.dialog_OK, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        presenter.doDeleteCart(String.valueOf(listScheduled.get(position).getProductId()));
+                        listScheduled.remove(position);
+                        scheduledAdapter.replaceData(listScheduled);
+                        int totalCount = 0;
+                        float totalPrice = 0;
+                        for(ProductSchedule product : listScheduled) {
+                            totalCount += product.getNumber();
+                            totalPrice = totalPrice + (product.getNumber()*Float.parseFloat(product.getPriceDiscount()));
+                        }
+                        txtTotalCount.setText(totalCount+"");
+                        //txtTotalPrice.setText(totalPrice+"");
+                        txtTotalPrice.setText(String.format("%sđ", CommonUtils.parseMoney(totalPrice)));
+
+                        if(listScheduled.size()<1) {
+                            btnScheduled.setEnabled(false);
+                            btnScheduled.setBackground(getResources().getDrawable(R.drawable.bg_button_grey));
+                        }
+                    }
+                })
+                .setNegativeButton(R.string.dialog_CANCEL, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        //empty
+                    }
+                })
+                .create();
+
+        alertDialog.show();
+    }
+
+    @Override
+    public void onPlusItem(int position) {
+        ProductSchedule productSchedule = listScheduled.get(position);
+        ProductSchedule pro = new ProductSchedule(
+                productSchedule.getProductId(),
+                productSchedule.getNumber() + 1,
+                Float.parseFloat(productSchedule.getPriceDiscount()),
+                productSchedule.getIndexSpinner(),
+                productSchedule.getProductName(),
+                productSchedule.getPrice(),
+                productSchedule.getImg()
+        );
+        listScheduled.set(position, pro);
+
+        int totalCount = 0;
+        float totalPrice = 0;
+        for(ProductSchedule product : listScheduled) {
+            totalCount += product.getNumber();
+            totalPrice = totalPrice + (product.getNumber()*Float.parseFloat(product.getPriceDiscount()));
+        }
+        txtTotalCount.setText(totalCount+"");
+//        txtTotalPrice.setText(totalPrice+"");
+        txtTotalPrice.setText(String.format("%sđ", CommonUtils.parseMoney(totalPrice)));
+    }
+
+    @Override
+    public void onMinusItem(int position) {
+        ProductSchedule productSchedule = listScheduled.get(position);
+        if (productSchedule.getNumber() > 1) {
+            ProductSchedule pro = new ProductSchedule(
+                    productSchedule.getProductId(),
+                    productSchedule.getNumber() - 1,
+                    Float.parseFloat(productSchedule.getPriceDiscount()),
+                    productSchedule.getIndexSpinner(),
+                    productSchedule.getProductName(),
+                    productSchedule.getPrice(),
+                    productSchedule.getImg()
+            );
+            listScheduled.set(position, pro);
+
+            int totalCount = 0;
+            float totalPrice = 0;
+            for(ProductSchedule product : listScheduled) {
+                totalCount += product.getNumber();
+                totalPrice = totalPrice + (product.getNumber()*Float.parseFloat(product.getPriceDiscount()));
+            }
+            txtTotalCount.setText(totalCount+"");
+//        txtTotalPrice.setText(totalPrice+"");
+            txtTotalPrice.setText(String.format("%sđ", CommonUtils.parseMoney(totalPrice)));
+        } else {
+            AlertDialog alertDialog = new AlertDialog.Builder(getContext())
+                    .setTitle(R.string.ask_del_these_items)
+                    .setPositiveButton(R.string.dialog_OK, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            presenter.doDeleteCart(String.valueOf(listScheduled.get(position).getProductId()));
+                            listScheduled.remove(position);
+                            scheduledAdapter.replaceData(listScheduled);
+                            int totalCount = 0;
+                            float totalPrice = 0;
+                            for(ProductSchedule product : listScheduled) {
+                                totalCount += product.getNumber();
+                                totalPrice = totalPrice + (product.getNumber()*Float.parseFloat(product.getPriceDiscount()));
+                            }
+                            txtTotalCount.setText(totalCount+"");
+                            //txtTotalPrice.setText(totalPrice+"");
+                            txtTotalPrice.setText(String.format("%sđ", CommonUtils.parseMoney(totalPrice)));
+
+                            if(listScheduled.size()<1) {
+                                btnScheduled.setEnabled(false);
+                                btnScheduled.setBackground(getResources().getDrawable(R.drawable.bg_button_grey));
+                            }
+                        }
+                    })
+                    .setNegativeButton(R.string.dialog_CANCEL, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            //empty
+                        }
+                    })
+                    .create();
+
+            alertDialog.show();
         }
     }
 

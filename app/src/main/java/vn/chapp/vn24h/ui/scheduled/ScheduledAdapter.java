@@ -150,7 +150,7 @@ public class ScheduledAdapter extends BaseAdapter<ProductSchedule> {
                 @Override
                 public void onClick(View v) {
                     onClickItemScheduled.onPlusItem(position);
-                    getCollection().get(position).setNumber(getCollection().get(position).getNumber() + 1);
+//                    getCollection().get(position).setNumber(getCollection().get(position).getNumber() + 1);
                 }
             });
             tvMinus.setOnClickListener(new View.OnClickListener() {
@@ -273,8 +273,6 @@ public class ScheduledAdapter extends BaseAdapter<ProductSchedule> {
 
             }
             onClickItemScheduled.onChangeCount(position, countt);
-//            onClickItemScheduled.onPlusItem(position);
-//            onClickItemScheduled.onMinusItem(position);
 
 
         }

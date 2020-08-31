@@ -645,15 +645,6 @@ public class ScheduleFragment extends BaseFragment implements ScheduleFrMvpView,
                     })
                     .create();
 
-//            //2. now setup to change color of the button
-//            alertDialog.setOnShowListener( new DialogInterface.OnShowListener() {
-//                @Override
-//                public void onShow(DialogInterface arg0) {
-//                    alertDialog.getButton(AlertDialog.BUTTON_POSITIVE).setTextColor(getResources().getColor(R.color.colorFF8800));
-//                    alertDialog.getButton(AlertDialog.BUTTON_NEGATIVE).setTextColor(getResources().getColor(R.color.colorFF8800));
-//                }
-//            });
-
             alertDialog.show();
         }
     }
