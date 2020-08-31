@@ -509,7 +509,7 @@ public class ScheduleProductFragment extends BaseFragment implements SchedulePro
             }
             temp++;
         }
-//jgkdjskfd
+
         String shopAddress = "";
         String shopName = "";
         String shopPhone = "";
@@ -553,7 +553,7 @@ public class ScheduleProductFragment extends BaseFragment implements SchedulePro
             }
         }
     }
-    // thanggggggggggggggggg
+    // tha
     @Override
     public void didAddProductToCart() {
 
