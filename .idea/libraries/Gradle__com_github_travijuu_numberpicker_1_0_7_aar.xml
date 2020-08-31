@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.travijuu:numberpicker:1.0.7@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/numberpicker-1.0.7.aar/1dd9f37036d3884bcd82f0e6da408d7b/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/numberpicker-1.0.7.aar/1dd9f37036d3884bcd82f0e6da408d7b/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/numberpicker-1.0.7.aar/1dd9f37036d3884bcd82f0e6da408d7b/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/numberpicker-1.0.7.aar/f12dd1aa0a28698a55d89aa1e604cab8/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/numberpicker-1.0.7.aar/f12dd1aa0a28698a55d89aa1e604cab8/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/numberpicker-1.0.7.aar/f12dd1aa0a28698a55d89aa1e604cab8/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: io.github.luizgrp.sectionedrecyclerviewadapter:sectionedrecyclerviewadapter:1.2.0@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/sectionedrecyclerviewadapter-1.2.0.aar/b86a84fc266244b5ff1cb4b3f9001df3/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/sectionedrecyclerviewadapter-1.2.0.aar/b86a84fc266244b5ff1cb4b3f9001df3/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/sectionedrecyclerviewadapter-1.2.0.aar/b86a84fc266244b5ff1cb4b3f9001df3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/sectionedrecyclerviewadapter-1.2.0.aar/43e185dd75c92b1b6d92daca08f26366/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/sectionedrecyclerviewadapter-1.2.0.aar/43e185dd75c92b1b6d92daca08f26366/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/sectionedrecyclerviewadapter-1.2.0.aar/43e185dd75c92b1b6d92daca08f26366/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.luizgrp.sectionedrecyclerviewadapter/sectionedrecyclerviewadapter/1.2.0/4f93bad5680d3b2d948dd7cac89124cd45bf8706/sectionedrecyclerviewadapter-1.2.0-javadoc.jar!/" />

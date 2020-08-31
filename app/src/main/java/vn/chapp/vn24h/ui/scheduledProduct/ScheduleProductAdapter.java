@@ -51,6 +51,10 @@ public class ScheduleProductAdapter extends BaseAdapter<ProductSchedule> {
         EditText edtCount;
         @BindView(R.id.tvItemScheduleName)
         TextView tvItemScheduleName;
+        @BindView(R.id.tvMinus)
+        TextView tvMinus;
+        @BindView(R.id.tvPlus)
+        TextView tvPlus;
         @BindView(R.id.txtPrice)
         TextView txtPrice;
         @BindView(R.id.imgClose)
@@ -130,6 +134,24 @@ public class ScheduleProductAdapter extends BaseAdapter<ProductSchedule> {
                 @Override
                 public void onClick(View v) {
                     onClickItemScheduled.onDeleteItem(position);
+                }
+            });
+
+            tvPlus.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    onClickItemScheduled.onPlusItem(position);
+//                    getCollection().get(position).setNumber(getCollection().get(position).getNumber() + 1);
+                    //chưa dc
+                }
+            });
+            tvMinus.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    onClickItemScheduled.onMinusItem(position);
+//                    getCollection().get(position).setNumber(getCollection().get(position).getNumber() + 1);
+//                    edtCount.setText(getCollection().get(position).getNumber());
+                    //chưa dc
                 }
             });
 
@@ -229,6 +251,10 @@ public class ScheduleProductAdapter extends BaseAdapter<ProductSchedule> {
         void onChangeCount(int position, int count);
 
         void onDeleteItem(int position);
+
+        void onPlusItem(int position);
+
+        void onMinusItem(int position);
     }
 
     public void setOnClickItemScheduled(OnClickItemScheduled onClickItemScheduled) {
