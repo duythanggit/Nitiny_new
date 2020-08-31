@@ -461,6 +461,7 @@ public class ScheduleProductFragment extends BaseFragment implements SchedulePro
     @Override
     public void didGetProduct(ListProducts products) {
         //spinner
+        // qqqqqqqqqqqqqqqqqqqqq
         listProduct = new ArrayList<ProductResponse>();
         listProductSpinner = new ArrayList<String>();
 
