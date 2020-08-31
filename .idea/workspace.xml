@@ -14,6 +14,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="642aaa39-d2c8-472e-a409-2c97aec4ee68" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/vn/chapp/vn24h/ui/scheduledProduct/ScheduleProductFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/vn/chapp/vn24h/ui/scheduledProduct/ScheduleProductFragment.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
