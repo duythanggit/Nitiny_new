@@ -585,6 +585,7 @@ public class ScheduleProductFragment extends BaseFragment implements SchedulePro
     @Override
     public void didGetProduct(ListProducts products) {
         //spinner
+        // qqqqqqqqqqqqqqqqqqqqqqqweqwewqewq
         listProduct = new ArrayList<ProductResponse>();
         listProductSpinner = new ArrayList<String>();
 
@@ -632,7 +633,7 @@ public class ScheduleProductFragment extends BaseFragment implements SchedulePro
             }
             temp++;
         }
-
+//jgkdjskfd
         String shopAddress = "";
         String shopName = "";
         String shopPhone = "";
@@ -676,7 +677,7 @@ public class ScheduleProductFragment extends BaseFragment implements SchedulePro
             }
         }
     }
-
+    // thanggggggggggggggggg
     @Override
     public void didAddProductToCart() {
 
