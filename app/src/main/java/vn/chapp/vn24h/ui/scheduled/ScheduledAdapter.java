@@ -26,9 +26,6 @@ import vn.chapp.vn24h.models.sale.ProductSchedule;
 import vn.chapp.vn24h.models.service.ProductResponse;
 import vn.chapp.vn24h.utils.CommonUtils;
 import vn.chapp.vn24h.utils.NetworkUtils;
-
-//phong
-
 public class ScheduledAdapter extends BaseAdapter<ProductSchedule> {
 
     public ScheduledAdapter(List<ProductSchedule> collection) {
